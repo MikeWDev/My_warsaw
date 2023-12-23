@@ -54,7 +54,7 @@ Medium: 11px
 ###NAVBAR###
 ####################*/
 .nav-logo img {
-  height: 100%;
+  height: 90%;
 }
 header {
   width: 100%;
@@ -92,4 +92,87 @@ header {
 .basket-svg {
   display: flex;
   align-items: center;
+}
+.nav-container {
+  padding: 0 3.2rem;
+}
+/*####################
+###HOME PAGE###
+####################*/
+.home-img img {
+  height: 500px;
+}
+.small-slogan h3 {
+  color: #ec2427;
+  font-family: "Lobster", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+.big-slogans h1 {
+  font-family: inherit;
+  color: #fff;
+  font-size: 7.2rem;
+  font-weight: 600;
+}
+.home-button button {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  text-align: center;
+  background: none;
+  border: 4px solid #ec2427;
+  border-radius: 10px;
+  padding: 12px;
+}
+.home-button button:hover {
+  color: #ec2427;
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+.home-img img {
+  border: #ec2427 solid 6px;
+}
+.home-img {
+  align-self: center;
+}
+.home-content {
+  grid-template-columns: 1.5fr 0.5fr;
+}
+.small-slogan {
+  display: flex;
+  padding: 1rem 0;
+}
+.home-slogans {
+  display: flex;
+  flex-direction: column;
+}
+.home-slogan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6.2rem;
+  justify-content: center;
+}
+.home-section {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.home {
+  margin-top: 4rem;
+}
+.home-arrow {
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 5px;
+  background-color: #ec2427;
+  position: absolute;
+  border-radius: 222px;
+  left: 50%;
+  top: 87%;
+  cursor: pointer;
 }
