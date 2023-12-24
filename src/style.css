@@ -51,54 +51,13 @@ Medium: 11px
 */
 
 /*####################
-###NAVBAR###
-####################*/
-.nav-logo img {
-  height: 90%;
-}
-header {
-  width: 100%;
-  display: flex;
-  height: 8.6rem;
-  justify-content: space-between;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.nav-links a {
-  color: #fff;
-  font-family: inherit;
-  font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.nav-links a:hover {
-  color: #ec2427;
-  transition: all ease 500ms;
-}
-.nav-basket {
-  padding: 1rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  border-radius: 5px;
-  background-color: #ec2427;
-}
-.basket-svg {
-  display: flex;
-  align-items: center;
-}
-.nav-container {
-  padding: 0 3.2rem;
-}
-/*####################
 ###HOME PAGE###
 ####################*/
+
+.home-section {
+  padding-bottom: 6.4rem;
+  padding-top: 1.2rem;
+}
 .home-img img {
   height: 500px;
 }
@@ -116,7 +75,7 @@ header {
   font-size: 7.2rem;
   font-weight: 600;
 }
-.home-button button {
+.btn button {
   color: #fff;
   font-size: 2rem;
   text-transform: uppercase;
@@ -127,11 +86,7 @@ header {
   border-radius: 10px;
   padding: 12px;
 }
-.home-button button:hover {
-  color: #ec2427;
-  border: 4px solid #fff;
-  cursor: pointer;
-}
+
 .home-img img {
   border: #ec2427 solid 6px;
 }
@@ -163,16 +118,77 @@ header {
 .home {
   margin-top: 4rem;
 }
-.home-arrow {
+.arrow {
   padding: 1rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   border-radius: 5px;
   background-color: #ec2427;
-  position: absolute;
   border-radius: 222px;
-  left: 50%;
-  top: 87%;
   cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+}
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+/*####################
+###HOME PAGE###
+####################*/
+
+.menu-section {
+  background-color: #faf7f2;
+  padding: 6.4rem 0;
+}
+.menu-sub-heading h3 {
+  color: #ec2427;
+  font-family: "Lobster", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+.heading h2 {
+  color: #000;
+  font-family: inherit;
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.menu-btn button {
+  background: #222;
+}
+.menu-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu-sub-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.menu-arrow {
+  display: inline-block;
+}
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 6.4rem 0;
 }
