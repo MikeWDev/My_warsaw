@@ -1,5 +1,6 @@
 import MenuCard from "../components/menuCard";
 import { arrowDown } from "../assets/img/svgIndex";
+import ArrowDown from "../components/arrowDown";
 
 const MenuPage = () => {
   return (
@@ -26,11 +27,7 @@ const MenuPage = () => {
             <div className="btn menu-btn">
               <button>see full menu</button>
             </div>
-            <div className="arrow-container">
-              <div className="arrow">
-                <div>{arrowDown}</div>
-              </div>
-            </div>
+            <ArrowDown />
           </div>
         </div>
       </section>

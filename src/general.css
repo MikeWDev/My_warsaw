@@ -178,3 +178,74 @@ header {
   display: flex;
   padding: 1rem;
 }
+/*####################
+###ARROW COMPONET###
+####################*/
+
+.arrow {
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 5px;
+  background-color: #ec2427;
+  border-radius: 222px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/*####################
+###FIGURE COMPONENT###
+####################*/
+figure {
+  display: flex;
+  align-items: center;
+  gap: 4.2rem;
+}
+figcaption p {
+  color: #b8afaf;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+}
+figcaption {
+  display: flex;
+  align-items: center;
+}
+.about-img-box {
+  height: 100%;
+}
+
+.about-figure-con {
+  display: flex;
+  justify-content: space-between;
+}
+/*####################
+###FIGURE COMPONENT###
+####################*/
+
+.figure--img {
+  width: 35rem;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+.figure-img {
+  position: relative;
+}
+.figure-img::before {
+  background-color: #ec2427;
+  content: "";
+  width: 35rem;
+  height: 35rem;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: 0;
+}

@@ -118,29 +118,14 @@ Medium: 11px
 .home {
   margin-top: 4rem;
 }
-.arrow {
-  padding: 1rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  border-radius: 5px;
-  background-color: #ec2427;
-  border-radius: 222px;
-  cursor: pointer;
-  display: inline-block;
-}
 
-.arrow-container {
-  display: flex;
-  justify-content: center;
-}
 .home-content-container {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 /*####################
-###HOME PAGE###
+###MENU PAGE###
 ####################*/
 
 .menu-section {
@@ -191,4 +176,43 @@ Medium: 11px
   flex-direction: column;
   gap: 2.4rem;
   margin: 6.4rem 0;
+}
+/*####################
+###ABOUT US PAGE###
+####################*/
+.section-about-us {
+  padding: 6.4rem 0;
+}
+.about-figure-con {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.about-heading-box {
+  background-color: #ec2427;
+  width: 1.6rem;
+  height: 7.2rem;
+}
+.about-heading-con {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+figure:nth-child(2) {
+  flex-direction: row-reverse;
+}
+figure:nth-child(2) .figure-img::before {
+  left: 20px !important;
+}
+.about-content-con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-arrow-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

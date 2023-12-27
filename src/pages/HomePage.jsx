@@ -1,6 +1,6 @@
 import NavBar from "../components/navBar";
 import homePageBg from "../assets/img/home-page-bg.png";
-import { arrowDown } from "../assets/img/svgIndex";
+import ArrowDown from "../components/arrowDown";
 const HomePage = () => {
   return (
     <>
@@ -31,11 +31,7 @@ const HomePage = () => {
                 />
               </div>
             </div>
-            <div className="arrow-container">
-              <div className="arrow">
-                <a>{arrowDown}</a>
-              </div>
-            </div>
+            <ArrowDown />
           </div>
         </div>
       </section>
