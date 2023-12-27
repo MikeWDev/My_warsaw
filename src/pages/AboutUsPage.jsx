@@ -8,7 +8,7 @@ const AboutUsPage = () => {
         <div className="about container">
           <div className="about-content-con">
             <div className="about-heading-con">
-              <div className="about-heading-box"></div>
+              <div className="heading-box"></div>
               <div className="about-heading big-slogans">
                 <h1>About us</h1>
               </div>

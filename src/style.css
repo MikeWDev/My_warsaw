@@ -189,7 +189,7 @@ Medium: 11px
   gap: 4.2rem;
 }
 
-.about-heading-box {
+.heading-box {
   background-color: #ec2427;
   width: 1.6rem;
   height: 7.2rem;
@@ -215,4 +215,89 @@ figure:nth-child(2) .figure-img::before {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+/*####################
+###CONTACT US PAGE###
+####################*/
+.contact-section {
+  background-color: #faf7f2;
+  padding-top: 6.4rem;
+  padding-bottom: 12.8rem;
+}
+.contact-heading h1 {
+  color: #000;
+}
+
+.contact-header-con {
+  display: inline-flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.contact-direction p {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #000;
+}
+.contact-info-con {
+  display: flex;
+  flex-direction: column;
+}
+.contact-phone h3,
+.contact-email h3 {
+  padding: 1rem;
+  padding-left: 0;
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.contact-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 4.6rem;
+}
+.social {
+  display: flex;
+  background-color: #ec2427;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+.contact-details-con {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.contact-content-con {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.4rem;
+  padding: 6.4rem 0;
+}
+.contact {
+  margin: 0 6.4rem;
+}
+
+.adress-heading {
+  font-size: 2.4rem;
+  font-family: inherit;
+  color: #fff;
+}
+.adress-details p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.adress-box {
+  background-color: #222;
+  border: 5px solid #ec2427;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  top: 80%;
+  right: 80%;
+  width: 35%;
+}
+.contact-map-con {
+  position: relative;
 }
