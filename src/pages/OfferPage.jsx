@@ -2,15 +2,15 @@ import MenuCard from "../components/menuCard";
 import { arrowDown } from "../assets/img/svgIndex";
 import ArrowDown from "../components/arrowDown";
 
-const MenuPage = () => {
+const OfferPage = () => {
   return (
     <>
-      <section className="menu-section">
-        <div className="menu container grid">
-          <div className="menu-content ">
-            <div className="menu-header-container">
-              <div className="menu-small-heading">
-                <div className="menu-sub-heading">
+      <section className="offer-section">
+        <div className="offer container grid">
+          <div className="offer-content ">
+            <div className="offer-header-container">
+              <div className="offer-small-heading">
+                <div className="offer-sub-heading">
                   <h3>BestFoodMenu</h3>
                 </div>
                 <div className="heading">
@@ -18,13 +18,13 @@ const MenuPage = () => {
                 </div>
               </div>
             </div>
-            <div className="menu-card-container grid grid--4-cols">
+            <div className="offer-card-container grid grid--4-cols">
               <MenuCard />
               <MenuCard />
               <MenuCard />
               <MenuCard />
             </div>
-            <div className="btn menu-btn">
+            <div className="btn offer-btn">
               <button>see full menu</button>
             </div>
             <ArrowDown />
@@ -35,4 +35,4 @@ const MenuPage = () => {
   );
 };
 
-export default MenuPage;
+export default OfferPage;

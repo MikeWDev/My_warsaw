@@ -125,14 +125,14 @@ Medium: 11px
   gap: 1.6rem;
 }
 /*####################
-###MENU PAGE###
+###OFFER PAGE###
 ####################*/
 
-.menu-section {
+.offer-section {
   background-color: #faf7f2;
   padding: 6.4rem 0;
 }
-.menu-sub-heading h3 {
+.offer-sub-heading h3 {
   color: #ec2427;
   font-family: "Lobster", sans-serif;
   text-transform: uppercase;
@@ -148,30 +148,30 @@ Medium: 11px
   font-weight: 700;
   padding: 1rem;
 }
-.menu-btn button {
+.offer-btn button {
   background: #222;
 }
-.menu-header-container {
+.offer-header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.menu-sub-heading {
+.offer-sub-heading {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-btn {
+.offer-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
 }
-.menu-arrow {
+.offer-arrow {
   display: inline-block;
 }
-.menu-content {
+.offer-content {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -373,4 +373,19 @@ figure:nth-child(2) .figure-img::before {
   display: flex;
   gap: 3.6rem;
   flex-direction: column;
+}
+/*####################
+###FULL MENU PAGE###
+####################*/
+.menu-section {
+  background-color: #faf7f2;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.menu-container {
+}
+body {
+  background-color: #faf7f2;
 }

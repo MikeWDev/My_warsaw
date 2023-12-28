@@ -249,3 +249,28 @@ figcaption {
   left: -20px;
   z-index: 0;
 }
+/*####################
+###MENU HEADER COMPONENT###
+####################*/
+.menu-header h3 {
+  font-family: "Lobster", sans-serif;
+  font-size: 3.2rem;
+  color: #ec2427;
+  font-weight: 400;
+  text-align: center;
+}
+/*####################
+###MENU SELECTION COMPONENT###
+####################*/
+.menu-selection-con button {
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: none;
+  background: none;
+  font-weight: 700;
+  padding: 1rem 1.2rem;
+  border-radius: 5.6rem;
+  text-align: center;
+  background-color: #ece7df;
+}

@@ -1,17 +1,19 @@
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUs from "./pages/ContactUsPage";
 import HomePage from "./pages/HomePage";
-import MenuPage from "./pages/MenuPage";
+import OfferPage from "./pages/OfferPage";
+import OurMenu from "./pages/OurMenuPage";
 import Footer from "./pages/footer";
 
 function App() {
   return (
     <>
-      <HomePage />
+      {/* <HomePage />
       <MenuPage />
       <AboutUsPage />
       <ContactUs />
-      <Footer />
+      <Footer /> */}
+      <OurMenu />
     </>
   );
 }
