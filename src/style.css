@@ -301,3 +301,76 @@ figure:nth-child(2) .figure-img::before {
 .contact-map-con {
   position: relative;
 }
+/*####################
+###FOOTER###
+####################*/
+.footer-logo-con img {
+  width: 120%;
+}
+.footer-content-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 6.4rem 0;
+  gap: 6.4rem;
+}
+.about-heading {
+  color: #fff;
+  font-size: 2rem;
+}
+.about-heading-box {
+  background-color: #ec2427;
+  width: 3.6rem;
+  height: 0.8rem;
+}
+.footer-about-disc p {
+  font-size: 1.6rem;
+  color: #b8afaf;
+  padding: 2rem;
+  padding-top: 0;
+  padding-left: 0;
+}
+.footer-about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+.footer-info-con {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+}
+
+.footer-menu-links {
+  color: #b8afaf;
+  font-size: 1.6rem;
+  display: flex;
+}
+.footer-menu-links ul {
+  list-style: none;
+}
+.footer-menu-links ul li {
+  margin-bottom: 0.8rem;
+}
+.footer-menu-con {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.footer-phone p,
+.footer-email p {
+  color: #b8afaf;
+  font-size: 1.6rem;
+}
+.footer-nav > ul > li {
+  color: #b8afaf;
+  font-size: 1.6rem;
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+.footer-nav-con {
+  display: flex;
+  gap: 3.6rem;
+  flex-direction: column;
+}
