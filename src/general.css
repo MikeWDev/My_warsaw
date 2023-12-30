@@ -92,6 +92,9 @@ body {
 /*####################
 ###NAVBAR###
 ####################*/
+.nav-wraper {
+  background-color: #161616;
+}
 .nav-logo img {
   height: 90%;
 }
@@ -100,6 +103,7 @@ header {
   display: flex;
   height: 8.6rem;
   justify-content: space-between;
+  background-color: #161616;
 }
 .nav-links {
   display: flex;
@@ -133,7 +137,10 @@ header {
   align-items: center;
 }
 .nav-container {
+  max-width: 120rem;
   padding: 0 3.2rem;
+  margin: 0 auto;
+  background-color: #000;
 }
 /*####################
 ###CARD COMPONET###
@@ -150,6 +157,7 @@ header {
   background-color: #ece7df;
   padding: 2.4rem;
   max-width: 24.8rem;
+  position: relative;
 }
 .card-details {
   font-family: inherit;
@@ -173,6 +181,7 @@ header {
   font-size: 2rem;
   color: #ec2427;
   font-weight: 700;
+  position: relative;
 }
 .card-img {
   display: flex;
@@ -273,4 +282,127 @@ figcaption {
   border-radius: 5.6rem;
   text-align: center;
   background-color: #ece7df;
+}
+/*####################
+###MENU LINEBREAK COMPONENT###
+####################*/
+.menu-linebreak {
+  background: #000;
+  height: 0.1rem;
+  width: 90%;
+}
+.menu-linebreak-con {
+  display: flex;
+  justify-content: center;
+}
+/*####################
+###MENU CARD COMPONENT###
+####################*/
+.plus-button {
+  background: #ec2427;
+  border-radius: 4rem;
+  position: absolute;
+  padding: 0.4rem;
+  left: 85%;
+  top: 90%;
+}
+/*####################
+###MENU BASKET SUMMARY CARD COMPONENT###
+####################*/
+.summary-card-con {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.summary-img img {
+  height: 8.6rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+.summary-item-name p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+.item-quantity p {
+  font-size: 1.2rem;
+  border: 1px solid #b8afaf;
+  padding: 0.2rem;
+}
+.summary-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+.item-price p {
+  font-size: 1.6rem;
+  color: #ec2427;
+  font-family: inherit;
+  font-weight: 700;
+}
+.summary-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-left: 0;
+}
+/*####################
+###DELIVERY DETAILS COMPONENT###
+####################*/
+.delivery-con {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.delivery-det-con {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.delivery-header-con h1 {
+  font-family: "Lobster", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #ec2427;
+}
+.contact-det-header {
+  font-family: inherit;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.delivery-det-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 55%;
+}
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+}
+
+input {
+  border: none;
+  background-color: #d9d9d9;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+.delivery-button-con {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.delivery-input-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.second-input {
+  display: flex;
+  justify-content: flex-end;
 }

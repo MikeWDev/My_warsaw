@@ -382,10 +382,109 @@ figure:nth-child(2) .figure-img::before {
 }
 .menu {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 7fr 3fr;
 }
-.menu-container {
+.menu-selection-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-body {
-  background-color: #faf7f2;
+.menu-header-con {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.menu-card-con {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3.6rem;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+}
+.menu-con {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.basket-con {
+  background-color: #d9d9d9;
+}
+.basket-header-con {
+  display: flex;
+  gap: 0.8rem;
+  border-bottom: #000 solid 1px;
+  padding: 1rem;
+}
+.basket-header h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.basket-header {
+  display: flex;
+  align-items: center;
+}
+.basket-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0 0.6rem;
+}
+.basket-con {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+}
+.subtotal-heading p,
+.delivery-heading p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.subtotal-price p,
+.delivery-price p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ec2427;
+}
+.summary-subtotal,
+.summary-delivery {
+  display: flex;
+  gap: 3.6rem;
+}
+.summary-price-con {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0 0.6rem;
+}
+.summary-total-heading p,
+.summary-total-price p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: inherit;
+}
+.summary-total {
+  display: flex;
+  gap: 1.6rem;
+}
+.summary-total-price p {
+  color: #ec2427;
+}
+.summary-button-con button {
+  background-color: #222;
+  padding: 0.8rem;
+  border-style: none;
+  border: 3px solid #ec2427;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.summary-total-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.6rem;
 }

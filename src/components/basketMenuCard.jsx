@@ -1,5 +1,6 @@
 import zapiekMush from "../assets/img/home-page-bg.png";
-const BasketMenuCard = () => {
+import { plusButton } from "../assets/img/svgIndex";
+const MenuCard = () => {
   return (
     <>
       <div className="card">
@@ -19,9 +20,10 @@ const BasketMenuCard = () => {
             <h5>£13.40</h5>
           </div>
         </div>
+        <div className="plus-button">{plusButton}</div>
       </div>
     </>
   );
 };
 
-export default BasketMenuCard;
+export default MenuCard;
