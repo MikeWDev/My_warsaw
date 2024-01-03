@@ -418,7 +418,10 @@ input {
 .delivery-button-con {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: flex-end;
+}
+.delivery-button-con button {
+  margin-right: 6.4rem;
 }
 .delivery-input-area {
   display: flex;
@@ -428,4 +431,69 @@ input {
 .second-input {
   display: flex;
   justify-content: flex-end;
+}
+/*####################
+###CHECKOUT COMPONET###
+####################*/
+.checkout-con {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  margin: 6.4rem 0;
+}
+.checkout-header-con h1 {
+  font-family: "Lobster", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #ec2427;
+}
+.confirm-svg-con {
+  background-color: #ec2427;
+  display: inline-block;
+  border-radius: 10rem;
+}
+.confirm-order-no p {
+  font-weight: 600;
+  color: #837474;
+  font-size: 1.4rem;
+}
+.confirm-thanks {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: inherit;
+}
+.checkout-confirm {
+  display: flex;
+  gap: 1rem;
+}
+.updates-heading h3 {
+  font-size: 2rem;
+}
+.updates-info p {
+  color: #837474;
+  font-size: 1.4rem;
+}
+.checkout-updates {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.data-heading {
+  font-size: 1.4rem;
+  color: #837474;
+}
+.data-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.data-content li {
+  font-size: 1.4rem;
+  color: #6b6363;
+}
+.checkout-contact-data,
+.checkout-adress-data {
+  display: flex;
+  gap: 1.6rem;
 }

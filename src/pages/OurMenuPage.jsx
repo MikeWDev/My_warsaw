@@ -8,6 +8,7 @@ import BasketSummaryCard from "../components/basketSummaryCard";
 import NavBar from "../components/navBar";
 import MenuChoice from "../components/menuChoice";
 import DeliveryDetails from "../components/deliveryDetails";
+import DeliveryCheckout from "../components/deliveryCheckout";
 const OurMenuPage = () => {
   return (
     <>
@@ -15,9 +16,9 @@ const OurMenuPage = () => {
         <NavBar />
         <div className="menu container">
           <div className="content-con">
+            {/* <DeliveryCheckout />
             <DeliveryDetails />
-
-            {/* <MenuChoice /> */}
+            <MenuChoice /> */}
           </div>
           <div className="basket-con">
             <div className="basket-header-con">
