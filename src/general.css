@@ -65,7 +65,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #161616;
+  background-color: #faf7f2;
   overflow-x: hidden;
 }
 /*####################
@@ -140,7 +140,6 @@ header {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
-  background-color: #000;
 }
 /*####################
 ###CARD COMPONET###
@@ -324,7 +323,15 @@ figcaption {
   font-weight: 600;
   margin: 0 1rem;
 }
-.item-quantity p {
+.summary-item-name {
+  display: flex;
+  justify-content: space-between;
+}
+.delete-icon:hover {
+  fill: #ec2427;
+  cursor: pointer;
+}
+.delete-ico .item-quantity p {
   font-size: 1.2rem;
   border: 1px solid #b8afaf;
   padding: 0.2rem;
@@ -332,7 +339,6 @@ figcaption {
 .summary-data {
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
 }
 .item-price p {
   font-size: 1.6rem;
@@ -347,6 +353,23 @@ figcaption {
   padding: 1rem;
   padding-left: 0;
 }
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.count-qty p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+}
+.count-qty {
+  justify-self: center;
+}
+
 /*####################
 ###DELIVERY DETAILS COMPONENT###
 ####################*/
@@ -376,7 +399,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  width: 55%;
+  width: 65%;
 }
 label {
   font-size: 1.6rem;

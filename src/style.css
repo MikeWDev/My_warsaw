@@ -488,3 +488,10 @@ figure:nth-child(2) .figure-img::before {
   justify-content: space-between;
   padding: 0 0.6rem;
 }
+.delivery-con {
+  margin: 6.4rem 0;
+}
+
+.content-con {
+  height: 100vh;
+}
