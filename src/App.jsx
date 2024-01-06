@@ -9,11 +9,11 @@ import TestPage from "./pages/testPage";
 function App() {
   return (
     <>
-      {/* <HomePage /> */}
+      <HomePage />
       <OfferPage />
-      {/* <AboutUsPage />
+      <AboutUsPage />
       <ContactUs />
-      <Footer /> */}
+      <Footer />
       {/* <OurMenu /> */}
     </>
   );
