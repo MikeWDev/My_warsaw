@@ -1,0 +1,59 @@
+/* 1rem = 1em = 16px*/
+
+/*#################################
+### SMALL LAPTOPS BELOW 1195px####
+###################################*/
+@media (max-width: 75em) {
+  html {
+    font-size: 56%;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 1056px####
+###################################*/
+@media (max-width: 66.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 957px####
+###################################*/
+@media (max-width: 60em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 832px####
+###################################*/
+@media (max-width: 52em) {
+  html {
+    font-size: 41.75%;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 784px####
+###################################*/
+@media (max-width: 50em) {
+  .home-content {
+    grid-template-columns: 1fr;
+    column-gap: 1.2rem;
+  }
+  .home-slogan-content {
+    text-align: center;
+  }
+  .small-slogan {
+    justify-content: center;
+  }
+  .home-img {
+    display: none;
+  }
+  .arrow > a > svg {
+    width: 42px;
+    height: 42px;
+  }
+  .offer-card-container {
+    display: none;
+  }
+}

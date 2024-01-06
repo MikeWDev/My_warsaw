@@ -24,11 +24,21 @@ const Footer = () => {
                 <FooterHeading text="Menu" />
                 <div className="footer-menu-links">
                   <ul>
-                    <li>{sideArrow} Zapiekanki</li>
-                    <li>{sideArrow} Pierogi</li>
-                    <li>{sideArrow} Drinks</li>
-                    <li>{sideArrow} Zapiekanki</li>
-                    <li>{sideArrow} Pierogi</li>
+                    <li>
+                      {sideArrow} <p>Zapiekanki</p>
+                    </li>
+                    <li>
+                      {sideArrow} <p>Pierogi</p>
+                    </li>
+                    <li>
+                      {sideArrow} <p>Drinks</p>
+                    </li>
+                    <li>
+                      {sideArrow} <p>Zapiekanki</p>
+                    </li>
+                    <li>
+                      {sideArrow} <p>Pierogi</p>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -45,6 +55,17 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="footer-copyright-info">
+            <div className="copywright">
+              <p>
+                Copyright © 2023 MyWarsaw. All Rights Reserved by KDevelopment
+              </p>
+            </div>
+            <div className="pp-links">
+              <div>Privacy Policy</div>
+              <div>Terms & Conditions</div>
             </div>
           </div>
         </div>

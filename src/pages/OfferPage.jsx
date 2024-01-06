@@ -1,6 +1,7 @@
-import MenuCard from "../components/menuCard";
 import { arrowDown } from "../assets/img/svgIndex";
 import ArrowDown from "../components/arrowDown";
+import OfferCarousel from "../components/offerCarousel";
+import TestPage from "./testPage";
 
 const OfferPage = () => {
   return (
@@ -11,19 +12,16 @@ const OfferPage = () => {
             <div className="offer-header-container">
               <div className="offer-small-heading">
                 <div className="offer-sub-heading">
-                  <h3>BestFoodMenu</h3>
+                  <h3>Best Food Menu</h3>
                 </div>
                 <div className="heading">
                   <h2>Our Popular Food Items</h2>
                 </div>
               </div>
             </div>
-            <div className="offer-card-container grid grid--4-cols">
-              <MenuCard />
-              <MenuCard />
-              <MenuCard />
-              <MenuCard />
-            </div>
+
+            <OfferCarousel />
+
             <div className="btn offer-btn">
               <button>see full menu</button>
             </div>

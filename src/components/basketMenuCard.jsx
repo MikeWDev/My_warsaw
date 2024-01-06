@@ -20,7 +20,7 @@ const MenuCard = () => {
             <h5>£13.40</h5>
           </div>
         </div>
-        <div className="plus-button">{plusButton}</div>
+        <div className="plus-button btn">{plusButton}</div>
       </div>
     </>
   );

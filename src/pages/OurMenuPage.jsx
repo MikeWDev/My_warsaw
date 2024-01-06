@@ -16,9 +16,9 @@ const OurMenuPage = () => {
         <NavBar />
         <div className="menu container">
           <div className="content-con">
-            {/* <DeliveryCheckout />
+            <MenuChoice />
+            <DeliveryCheckout />
             <DeliveryDetails />
-            <MenuChoice /> */}
           </div>
           <div className="basket-con">
             <div className="basket-header-con">
@@ -60,7 +60,7 @@ const OurMenuPage = () => {
                   <p>44.19</p>
                 </div>
               </div>
-              <div className="summary-button-con">
+              <div className=" btn summary-button-con">
                 <button>Pay</button>
               </div>
             </div>

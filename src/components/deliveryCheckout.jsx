@@ -58,7 +58,7 @@ const DeliveryCheckout = () => {
           </div>
         </div>
         <div className="delivery-button-con">
-          <div className="summary-button-con">
+          <div className="summary-button-con btn">
             <button type="submit">PROCEED TO PAYMENT</button>
           </div>
         </div>
