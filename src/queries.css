@@ -36,6 +36,9 @@
 ### SMALL LAPTOPS BELOW 784px####
 ###################################*/
 @media (max-width: 50em) {
+  html {
+    font-size: 56%;
+  }
   .home-content {
     grid-template-columns: 1fr;
     column-gap: 1.2rem;
@@ -54,6 +57,61 @@
     height: 42px;
   }
   .offer-card-container {
+    display: none;
+  }
+  .contact-content-con {
+    grid-template-columns: 1fr;
+    padding: 9rem;
+    row-gap: 4.8rem;
+  }
+  .adress-box {
+    top: -110%;
+    right: 10%;
+    width: 30%;
+  }
+  .footer-info-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    align-items: center;
+  }
+  .footer-logo-con img {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  .footer-logo-con {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-about-info,
+  .footer-menu-con,
+  .footer-logo-con,
+  .footer-nav-con {
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-about-disc {
+    text-align: center;
+    padding: 0 4.6rem;
+  }
+  figure,
+  figure:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .figure-img::before {
+    left: 10px;
+    top: -10px;
+  }
+  .about-content-con {
+    gap: 3.6rem;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 650px####
+###################################*/
+@media (max-width: 40.6em) {
+  .nav-links {
     display: none;
   }
 }

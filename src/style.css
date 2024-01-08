@@ -322,7 +322,8 @@ figure:nth-child(2) .figure-img::before {
 ###FOOTER###
 ####################*/
 .footer-logo-con img {
-  width: 120%;
+  width: 100%;
+  margin-right: 2rem;
 }
 .footer-content-con {
   display: flex;
@@ -334,6 +335,9 @@ figure:nth-child(2) .figure-img::before {
 .about-heading {
   color: #fff;
   font-size: 2rem;
+}
+.footer-con {
+  margin-bottom: 6.4rem !important;
 }
 .about-heading-box {
   background-color: #ec2427;
@@ -354,8 +358,9 @@ figure:nth-child(2) .figure-img::before {
 }
 .footer-info-con {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 3.2rem;
+  align-items: center;
 }
 
 .footer-menu-links {

@@ -94,6 +94,7 @@ body {
 ####################*/
 .nav-wraper {
   background-color: #161616;
+  position: relative;
 }
 .nav-logo img {
   height: 90%;
@@ -126,6 +127,7 @@ header {
 }
 .nav-basket {
   padding: 1rem;
+  z-index: 999;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
@@ -155,6 +157,56 @@ header {
   margin: 0 auto;
 }
 /*####################
+###NAV FULL SCREEn###
+####################*/
+.nav-sm {
+  position: fixed;
+  height: 100vh;
+  width: 50vh;
+  right: 0;
+  top: 0;
+  display: flex;
+  background-color: #161616;
+  align-items: center;
+  justify-content: center;
+  border-left: #ec2427 solid 2px;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  z-index: 999;
+  transition: 1s;
+}
+.hidden {
+  transition: 1s;
+  right: -60%;
+}
+
+.sm-link-con {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.sm-link a {
+  font-size: 4.8rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.sm-link a:hover {
+  color: #ec2427;
+  transition: all ease 500ms;
+}
+.basket-link > .nav-basket {
+  display: inline-block;
+}
+.basket-link {
+  display: flex;
+}
+
+/*####################
 ###CARD COMPONET###
 ####################*/
 .card-img img {
@@ -179,19 +231,7 @@ header {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/*  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
 
-.nav-basket:hover,
-.nav-basket:active,
-.nav-basket:focus {
-  box-shadow: 0 0 20px rgb(236, 36, 39);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}*/
 .card-details {
   font-family: inherit;
   display: flex;
@@ -311,7 +351,7 @@ figcaption {
   position: relative;
 }
 .figure-img::before {
-  background-color: #ec2427;
+  background-color: rgba(236, 36, 39, 0.714);
   content: "";
   width: 35rem;
   height: 35rem;
