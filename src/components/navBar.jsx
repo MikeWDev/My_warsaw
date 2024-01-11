@@ -32,24 +32,6 @@ const NavBar = () => {
     }
   }, [screenSize.width]);
 
-  // useEffect(() => {
-  //   const homeEl = document.getElementById("home");
-  //   if (
-  //     isOpen === true ||
-  //     intersectingState === false ||
-  //     (isOpen === true && intersectingState === true)
-  //   ) {
-  //     homeEl.classList.add("home-padding");
-  //     setSticky("sticky");
-  //     setTimeout(() => {
-  //       setSticky("sticky-slide sticky");
-  //     }, 500);
-  //   } else if (isOpen === false) {
-  //     homeEl.classList.add("home-padding");
-
-  //     setSticky(" ");
-  //   }
-  // }, [intersectingState]);
   console.log(intersectingState + "inters");
   console.log(isOpen + "isopen");
   useEffect(() => {

@@ -61,7 +61,7 @@
   }
   .contact-content-con {
     grid-template-columns: 1fr;
-    padding: 9rem;
+
     row-gap: 4.8rem;
   }
   .adress-box {
@@ -89,11 +89,9 @@
   .footer-nav-con {
     align-self: center;
     align-items: center;
-    text-align: center;
   }
   .footer-about-disc {
-    text-align: center;
-    padding: 0 4.6rem;
+    padding-left: 10%;
   }
   figure,
   figure:nth-child(2) {
@@ -108,10 +106,53 @@
   }
 }
 /*#################################
+### Adress box bug-fix 700px####
+###################################*/
+@media (max-width: 43.75em) {
+  .adress-box {
+    display: none;
+  }
+}
+/*#################################
 ### SMALL LAPTOPS BELOW 650px####
 ###################################*/
 @media (max-width: 40.6em) {
   .nav-links {
     display: none;
   }
+  html {
+    font-size: 54%;
+  }
 }
+/*#################################
+### SMALL LAPTOPS BELOW 560px####
+###################################*/
+@media (max-width: 35em) {
+  html {
+    font-size: 50%;
+  }
+  .hidden {
+    transition: 1s;
+    right: -80%;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 450px####
+###################################*/
+@media (max-width: 28.12em) {
+  .footer-about-disc {
+    padding-left: 5%;
+  }
+  .offer-sub-heading {
+    font-size: 1.2rem;
+  }
+  .heading h2 {
+    font-size: 2.6rem;
+  }
+  .contact-heading h1 {
+    font-size: 5.6rem;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 440px####
+###################################*/
