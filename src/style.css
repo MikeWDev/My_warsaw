@@ -55,8 +55,11 @@ Medium: 11px
 ####################*/
 
 .home-section {
-  padding-bottom: 6.4rem;
+  padding-bottom: 7.4rem;
   padding-top: 1.2rem;
+}
+.home-padding {
+  padding-top: 10.2rem !important;
 }
 .home-img img {
   height: 100%;

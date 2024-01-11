@@ -1,30 +1,34 @@
-import $ from 'jquery';
-import { useState } from 'react';
+import $ from "jquery";
+import { useEffect, useState } from "react";
 const UseIntersecting = () => {
-  const [intersectingState, setIntersectingState]=useState(true);
-  const obs = new IntersectionObserver(
-    function(entiries){
-      const ent = entiries[0];
-      const bodyElement = $("body");
-      
-      
+  const [intersectingState, setIntersectingState] = useState(true);
 
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      function (entires) {
+        const ent = entires[0];
 
-    },{
-      root:null,
-      threshold:0,
-      rootMargin:"-90px"
-    }
-  )
-  bodyElement.forEach((el) =>{
-    obs.observe(el)
-  })
-  
-  return (  );
-}
- 
+        if (ent.isIntersecting === false) {
+          setIntersectingState(false);
+        } else {
+          setIntersectingState(true);
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "-90px",
+      }
+    );
+
+    const homeElement = document.querySelectorAll(".home-section");
+
+    homeElement.forEach((el) => {
+      obs.observe(el);
+    });
+  }, []);
+
+  return intersectingState;
+};
+
 export default UseIntersecting;
-
-
-
-ntersecting;

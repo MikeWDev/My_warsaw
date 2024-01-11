@@ -4,11 +4,16 @@ import { Basket, List, X } from "@phosphor-icons/react";
 import useScreenSize from "../hooks/useScreenSize";
 import NavMenuSm from "./navMenuSm";
 import $ from "jquery";
+import UseIntersecting from "../hooks/useIntersecting";
+
 const NavBar = () => {
+  const intersectingState = UseIntersecting();
   const [navIcon, setNavIcon] = useState("");
   const [isOpen, setIsOpen] = useState("false");
-  const screenSize = useScreenSize();
+  const [sticky, setSticky] = useState("");
+  const homeEl = document.getElementById("home");
 
+  const screenSize = useScreenSize();
   const listIcon = (
     <List onClick={handleClickOpen} size={32} color="#fff" weight="bold" />
   );
@@ -27,18 +32,63 @@ const NavBar = () => {
     }
   }, [screenSize.width]);
 
+  // useEffect(() => {
+  //   const homeEl = document.getElementById("home");
+  //   if (
+  //     isOpen === true ||
+  //     intersectingState === false ||
+  //     (isOpen === true && intersectingState === true)
+  //   ) {
+  //     homeEl.classList.add("home-padding");
+  //     setSticky("sticky");
+  //     setTimeout(() => {
+  //       setSticky("sticky-slide sticky");
+  //     }, 500);
+  //   } else if (isOpen === false) {
+  //     homeEl.classList.add("home-padding");
+
+  //     setSticky(" ");
+  //   }
+  // }, [intersectingState]);
+  console.log(intersectingState + "inters");
+  console.log(isOpen + "isopen");
+  useEffect(() => {
+    const homeEl = document.getElementById("home");
+
+    if (
+      (isOpen === true && intersectingState === false) ||
+      (isOpen === true && intersectingState === true)
+    ) {
+      setSticky("sticky sticky-slide uwu");
+      homeEl.classList.add("home-padding");
+    } else if (isOpen === false) {
+      if (intersectingState === true) {
+        setSticky(" haga");
+        homeEl.classList.remove("home-padding");
+      } else if (intersectingState === false && isOpen === false) {
+        setSticky("sticky");
+        homeEl.classList.add("home-padding");
+        setTimeout(() => {
+          setSticky("sticky sticky-slide");
+        }, 10);
+      }
+    }
+  }, [intersectingState, isOpen]);
+
   function handleClickOpen() {
     setNavIcon(xIcon);
     setIsOpen(true);
+    // homeEl.classList.add("home-padding");
   }
   function handleClickClose() {
     setNavIcon(listIcon);
     setIsOpen(false);
+    // homeEl.classList.add("home-padding");
   }
 
   return (
     <>
-      <div className="nav-wraper">
+      <div className={`nav-wraper ${sticky}`}>
         <NavMenuSm openState={isOpen} />
         <div className="nav-container">
           <header>

@@ -95,6 +95,9 @@ body {
 .nav-wraper {
   background-color: #161616;
   position: relative;
+  height: 9rem;
+  z-index: 9999;
+  transition: all ease-in-out 1s;
 }
 .nav-logo img {
   height: 90%;
@@ -155,6 +158,17 @@ header {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+.sticky {
+  position: fixed;
+  top: -15%;
+  left: 0;
+  right: 0;
+  transition: all ease-in-out 600ms;
+}
+.sticky-slide {
+  top: 0% !important;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
 /*####################
 ###NAV FULL SCREEn###
