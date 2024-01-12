@@ -124,6 +124,11 @@
     font-size: 54%;
   }
 }
+@media (min-width: 40.6em) {
+  .nav-sm {
+    display: none;
+  }
+}
 /*#################################
 ### SMALL LAPTOPS BELOW 560px####
 ###################################*/
