@@ -1,5 +1,5 @@
 import zapiekMush from "../assets/img/home-page-bg.png";
-const BasketMenuCard = () => {
+const MenuCard = () => {
   return (
     <>
       <div className="card">
@@ -24,4 +24,4 @@ const BasketMenuCard = () => {
   );
 };
 
-export default BasketMenuCard;
+export default MenuCard;
