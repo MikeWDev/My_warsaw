@@ -7,10 +7,10 @@ import Footer from "./pages/footer";
 function App() {
   return (
     <>
-      <HomePage />
-      <OfferPage />
-      <AboutUsPage />
-      <ContactUs />
+      <HomePage name="home" />
+      <OfferPage name="offer" />
+      <AboutUsPage name="about" />
+      <ContactUs name="contact" />
       <Footer />
       {/* <OurMenu /> */}
     </>

@@ -1,6 +1,7 @@
 import logo from "../assets/img/My_warsaw_logo.png";
 import { sideArrow } from "../assets/img/svgIndex";
 import FooterHeading from "../components/footerHeading";
+import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <>
@@ -8,7 +9,16 @@ const Footer = () => {
         <div className="footer-con container">
           <div className="footer-info-con">
             <div className="footer-logo-con">
-              <img src={logo} alt="Logo of the restaurant" />
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-500}
+                duration={1300}
+              >
+                <img src={logo} alt="Logo of the restaurant" />
+              </Link>
             </div>
             <div className="footer-about-info">
               <FooterHeading text="About restaurant" />

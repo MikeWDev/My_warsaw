@@ -1,9 +1,9 @@
 import { facebook, twitter, instagram } from "../assets/img/svgIndex";
 import GoogleMap from "../components/googleMap";
-const ContactUs = () => {
+const ContactUs = (props) => {
   return (
     <>
-      <section className="contact-section">
+      <section name={props.name} className="contact-section">
         <div className="contact container">
           <div className="contact-content-con">
             <div className="contact-details-con">

@@ -1,10 +1,10 @@
 import ArrowDown from "../components/arrowDown";
 import Figure from "../components/figure";
-
-const AboutUsPage = () => {
+import { Link } from "react-scroll";
+const AboutUsPage = (props) => {
   return (
     <>
-      <section className="section-about-us">
+      <section name={props.name} className="section-about-us">
         <div className="about container">
           <div className="about-content-con">
             <div className="about-heading-con">
@@ -19,7 +19,16 @@ const AboutUsPage = () => {
               <Figure />
             </div>
             <div className="about-arrow-con">
-              <ArrowDown />
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1300}
+              >
+                <ArrowDown />
+              </Link>
             </div>
           </div>
         </div>

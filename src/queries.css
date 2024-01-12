@@ -146,7 +146,7 @@
 ###################################*/
 @media (max-width: 28.12em) {
   .footer-about-disc {
-    padding-left: 5%;
+    padding-left: 0;
   }
   .offer-sub-heading {
     font-size: 1.2rem;
@@ -157,7 +157,31 @@
   .contact-heading h1 {
     font-size: 5.6rem;
   }
+  .about-heading {
+    font-size: 1.4rem;
+  }
+  .footer-about-disc p {
+    padding: 0;
+  }
+  .footer-about-info {
+    margin-bottom: 3rem;
+  }
+  .footer-info-con {
+    column-gap: 2rem;
+  }
+  .nav-sm {
+    width: 70%;
+  }
 }
 /*#################################
-### SMALL LAPTOPS BELOW 440px####
+### SMALL LAPTOPS BELOW 300px####
 ###################################*/
+@media (max-width: 18.75em) {
+  .nav-sm {
+    width: 90%;
+  }
+  .hidden {
+    transition: 1s;
+    right: -90%;
+  }
+}

@@ -1,10 +1,11 @@
 import ArrowDown from "../components/arrowDown";
 import OfferCarousel from "../components/offerCarousel";
+import { Link } from "react-scroll";
 
-const OfferPage = () => {
+const OfferPage = (props) => {
   return (
     <>
-      <section className="offer-section">
+      <section name={props.name} className="offer-section">
         <div className="offer container grid">
           <div className="offer-content ">
             <div className="offer-header-container">
@@ -23,7 +24,16 @@ const OfferPage = () => {
             <div className="btn offer-btn">
               <button>see full menu</button>
             </div>
-            <ArrowDown />
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={1300}
+            >
+              <ArrowDown />
+            </Link>
           </div>
         </div>
       </section>
