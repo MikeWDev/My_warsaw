@@ -98,6 +98,7 @@ body {
   height: 9rem;
   z-index: 9999;
   transition: all ease-in-out 1s;
+  border-bottom: #842a2c8f solid 2px;
 }
 .nav-logo img {
   height: 90%;
@@ -176,7 +177,7 @@ header {
 .nav-sm {
   position: fixed;
   height: 100%;
-  width: 70%;
+  width: 55%;
   right: 0;
   top: 0;
   display: flex;
