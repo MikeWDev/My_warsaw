@@ -1,4 +1,3 @@
-import $ from "jquery";
 import { useEffect, useState } from "react";
 const UseIntersecting = () => {
   const [intersectingState, setIntersectingState] = useState(true);

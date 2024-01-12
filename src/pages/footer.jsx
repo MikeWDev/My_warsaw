@@ -1,7 +1,6 @@
 import logo from "../assets/img/My_warsaw_logo.png";
 import { sideArrow } from "../assets/img/svgIndex";
 import FooterHeading from "../components/footerHeading";
-import FooterSm from "../components/footerSm";
 const Footer = () => {
   return (
     <>

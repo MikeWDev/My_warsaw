@@ -3,7 +3,7 @@ import logo from "../assets/img/My_warsaw_logo.png";
 import { Basket, List, X } from "@phosphor-icons/react";
 import useScreenSize from "../hooks/useScreenSize";
 import NavMenuSm from "./navMenuSm";
-import $ from "jquery";
+
 import UseIntersecting from "../hooks/useIntersecting";
 
 const NavBar = () => {
@@ -11,7 +11,6 @@ const NavBar = () => {
   const [navIcon, setNavIcon] = useState("");
   const [isOpen, setIsOpen] = useState("false");
   const [sticky, setSticky] = useState("");
-  const homeEl = document.getElementById("home");
 
   const screenSize = useScreenSize();
   const listIcon = (

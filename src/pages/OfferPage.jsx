@@ -1,7 +1,5 @@
-import { arrowDown } from "../assets/img/svgIndex";
 import ArrowDown from "../components/arrowDown";
 import OfferCarousel from "../components/offerCarousel";
-import TestPage from "./testPage";
 
 const OfferPage = () => {
   return (

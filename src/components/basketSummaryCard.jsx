@@ -1,6 +1,6 @@
 import itemPic from "../assets/img/home-page-bg.png";
 import Linebreak from "./lineBreak";
-import { minusButton, plusButton, xSvg } from "../assets/img/svgIndex";
+import { xSvg } from "../assets/img/svgIndex";
 import { MinusCircle, PlusCircle } from "@phosphor-icons/react";
 const BasketSummaryCard = () => {
   return (

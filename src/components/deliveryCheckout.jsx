@@ -1,4 +1,3 @@
-import { LinkBreak } from "@phosphor-icons/react/dist/ssr";
 import Linebreak from "./lineBreak";
 import { CheckCircle } from "@phosphor-icons/react";
 const DeliveryCheckout = () => {
