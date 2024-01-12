@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import { menuChoices } from "../data";
 import Linebreak from "../components/lineBreak";
-import MenuCard from "../components/BasketMenuCard";
 import { basketSvg } from "../assets/img/svgIndex";
 import BasketSummaryCard from "../components/basketSummaryCard";
 import NavBar from "../components/navBar";
