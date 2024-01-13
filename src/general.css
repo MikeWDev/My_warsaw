@@ -197,8 +197,7 @@ header {
   z-index: 999;
   transition: 1s;
 }
-.sm-link-con {
-}
+
 .hidden {
   transition: 1s;
   right: -70%;
@@ -231,54 +230,141 @@ header {
 ####################*/
 .card-img img {
   width: 100%;
-  border-radius: 50%;
+  height: auto;
+  border-radius: 25px 25px 0 0;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ece7df;
-  padding: 1.6rem;
+  background-color: #222222;
+  gap: 1rem;
   max-width: 23rem;
   position: relative;
+  border-radius: 25px 25px 0 0;
+}
+.grow-anim {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 }
-.card:hover {
+.grow-anim:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
+/* .arrow {
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 5px;
+  background-color: #ec2427;
+  border-radius: 222px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.arrow:hover,
+.arrow:focus,
+.arrow:active {
+  box-shadow: 0 0 20px rgb(236, 36, 39);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+} */
 .card-details {
   font-family: inherit;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  background-color: #222222;
 }
 .card-heading h5 {
   font-size: 2rem;
   display: flex;
+
+  color: #fff;
+}
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.info-alerg-box {
+  color: #fff;
+  font-weight: 700;
+}
+.info-alerg-box {
+  display: flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.8rem;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+  background-color: #ec2427;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.alerg-active {
+  background-color: #222222;
+  color: #ec2427;
+  border: 2px solid #ec2427;
 }
 .card-ing p {
-  text-align: center;
   font-size: 1.4rem;
   color: #676562;
   font-weight: 600;
+  margin-left: 1rem;
 }
-.card-price h5 {
+.card-button-con h5 {
   text-align: center;
-  font-size: 2rem;
-  color: #ec2427;
+  font-size: 1.7rem;
+  color: #fff;
   font-weight: 700;
   position: relative;
 }
+.card-button-con {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.card-price {
+  background-color: #ec2427;
+  padding: 1rem;
+}
 .card-img {
   display: flex;
+  position: relative;
+}
+.button-card {
+  background-color: #ec2427;
   padding: 1rem;
+  border-radius: 25px 0 0 0;
+}
+.button-price {
+  padding: 1rem;
+}
+.alerg-overlap {
+  height: 100%;
+  width: 100%;
+  background-color: #0000008b;
+  z-index: 999;
+  position: absolute;
+  border-radius: 25px 25px 0 0;
+  transition: 1s ease;
+  opacity: 0;
+}
+.alerg-visible {
+  opacity: 1;
 }
 /*####################
 ###ARROW COMPONET###
@@ -403,14 +489,16 @@ figcaption {
   padding: 1rem 1.2rem;
   border-radius: 5.6rem;
   text-align: center;
-  background-color: #ece7df;
+  background-color: #222222;
+  color: #fff;
+  border: solid 2px #ec2427;
 }
 /*####################
 ###MENU LINEBREAK COMPONENT###
 ####################*/
 .menu-linebreak {
-  background: #000;
-  height: 0.1rem;
+  background: #ec2427;
+  height: 0.2rem;
   width: 90%;
 }
 .menu-linebreak-con {
@@ -438,23 +526,28 @@ figcaption {
 .summary-img img {
   height: 8.6rem;
   width: auto;
-  border-radius: 50%;
+  border-radius: 25px 0 0 25px;
 }
 
 .summary-item-name p {
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 0 1rem;
+  color: #fff;
 }
 .summary-item-name {
   display: flex;
   justify-content: space-between;
 }
 .delete-icon:hover {
-  fill: #ec2427;
   cursor: pointer;
 }
-.delete-ico .item-quantity p {
+.delete-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 0.2rem;
+  border: 1px solid #ec2427;
+}
+.delete-icon .delete-icon .item-quantity p {
   font-size: 1.2rem;
   border: 1px solid #b8afaf;
   padding: 0.2rem;
@@ -465,15 +558,19 @@ figcaption {
 }
 .item-price p {
   font-size: 1.6rem;
-  color: #ec2427;
+  color: #fff;
   font-family: inherit;
   font-weight: 700;
+}
+.item-price {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .summary-card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.2rem;
   padding-left: 0;
 }
 
@@ -482,17 +579,26 @@ figcaption {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+  background-color: #ec2427;
+  padding: 0.2rem;
+  border-radius: 12px;
 }
 .count-qty p {
   font-size: 1.4rem;
   font-weight: 600;
   font-family: inherit;
   text-align: center;
+  color: #fff;
 }
 .count-qty {
   justify-self: center;
 }
-
+.svg-qty-plus,
+.svg-qty-minus {
+  background-color: #161616;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
 /*####################
 ###DELIVERY DETAILS COMPONENT###
 ####################*/

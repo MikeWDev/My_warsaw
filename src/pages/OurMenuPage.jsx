@@ -5,6 +5,7 @@ import NavBar from "../components/navBar";
 import MenuChoice from "../components/menuChoice";
 import DeliveryDetails from "../components/deliveryDetails";
 import DeliveryCheckout from "../components/deliveryCheckout";
+import { Basket } from "@phosphor-icons/react";
 const OurMenuPage = () => {
   return (
     <>
@@ -13,12 +14,14 @@ const OurMenuPage = () => {
         <div className="menu container">
           <div className="content-con">
             <MenuChoice />
-            <DeliveryCheckout />
-            <DeliveryDetails />
+            {/* <DeliveryCheckout />
+            <DeliveryDetails /> */}
           </div>
           <div className="basket-con">
             <div className="basket-header-con">
-              <div className="basket-svg">{basketSvg}</div>
+              <div className="basket-svg">
+                <Basket size={32} color="#fff" />
+              </div>
               <div className="basket-header">
                 <h3>Your Order</h3>
               </div>

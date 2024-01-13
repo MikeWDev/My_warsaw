@@ -1,7 +1,7 @@
 import itemPic from "../assets/img/home-page-bg.png";
 import Linebreak from "./lineBreak";
 import { xSvg } from "../assets/img/svgIndex";
-import { MinusCircle, PlusCircle } from "@phosphor-icons/react";
+import { Minus, Plus } from "@phosphor-icons/react";
 const BasketSummaryCard = () => {
   return (
     <>
@@ -19,13 +19,13 @@ const BasketSummaryCard = () => {
           <div className="summary-data">
             <div className="item-quantity">
               <div className="svg-qty-plus">
-                <PlusCircle size={18} fill="#ec2427" />
+                <Plus size={18} fill="#fff" />
               </div>
               <div className="count-qty">
                 <p>x1</p>
               </div>
               <div className="svg-qty-minus">
-                <MinusCircle size={18} color="#ec2427" />
+                <Minus size={18} fill="#fff" />
               </div>
             </div>
             <div className="item-price">

@@ -32,8 +32,6 @@ const NavBar = () => {
     }
   }, [screenSize.width]);
 
-  console.log(intersectingState + "inters");
-  console.log(isOpen + "isopen");
   useEffect(() => {
     const homeEl = document.getElementById("home");
 

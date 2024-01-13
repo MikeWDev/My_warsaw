@@ -1,7 +1,7 @@
 import { menuChoices } from "../data";
 import MenuHeader from "./menuHeader";
 import Linebreak from "./lineBreak";
-import MenuCard from "./BasketMenuCard";
+import NewMenuCard from "./newMenuCards";
 
 const MenuChoice = () => {
   return (
@@ -10,18 +10,15 @@ const MenuChoice = () => {
         <MenuHeader text="Our Menu" />
         <div className="menu-selection-con">
           {menuChoices.map((data) => {
-            return <button>{data.name}</button>;
+            return <button key={data.key}>{data.name}</button>;
           })}
         </div>
       </div>
       <Linebreak />
       <div className="menu-card-con">
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
       </div>
     </div>
   );

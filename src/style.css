@@ -434,7 +434,7 @@ footer {
 ###FULL MENU PAGE###
 ####################*/
 .menu-section {
-  background-color: #faf7f2;
+  background-color: #161616;
 }
 .menu {
   display: grid;
@@ -464,18 +464,17 @@ footer {
   flex-direction: column;
   gap: 4.8rem;
 }
-.basket-con {
-  background-color: #d9d9d9;
-}
+
 .basket-header-con {
   display: flex;
   gap: 0.8rem;
-  border-bottom: #000 solid 1px;
+  border-bottom: #fff solid 1px;
   padding: 1rem;
 }
 .basket-header h3 {
   font-size: 1.6rem;
   font-weight: 600;
+  color: #fff;
 }
 .basket-header {
   display: flex;
@@ -491,17 +490,19 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3.8rem;
+  background-color: #222222;
 }
 .subtotal-heading p,
 .delivery-heading p {
   font-size: 1.6rem;
   font-weight: 700;
+  color: #fff;
 }
 .subtotal-price p,
 .delivery-price p {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #ec2427;
+  color: #fff;
 }
 .summary-subtotal,
 .summary-delivery {
@@ -519,13 +520,14 @@ footer {
   font-size: 1.6rem;
   font-weight: 700;
   font-family: inherit;
+  color: #fff;
 }
 .summary-total {
   display: flex;
   gap: 1.6rem;
 }
 .summary-total-price p {
-  color: #ec2427;
+  color: #fff;
 }
 .summary-button-con button {
   background-color: #222;
