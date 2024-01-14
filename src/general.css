@@ -634,7 +634,7 @@ figcaption {
 }
 .contact-det-header {
   font-family: inherit;
-  color: #000;
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -642,18 +642,19 @@ figcaption {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  width: 65%;
+  width: 100%;
 }
 label {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #000;
+  color: #fff;
 }
 
 input {
   border: none;
-  background-color: #d9d9d9;
+  background-color: #222222;
   padding: 0.4rem;
+  border: solid 1px #ec2427;
   border-radius: 0.5rem;
   font-family: inherit;
   font-size: 1.6rem;
@@ -697,7 +698,7 @@ input {
 }
 .confirm-order-no p {
   font-weight: 600;
-  color: #837474;
+  color: #fff;
   font-size: 1.4rem;
 }
 .confirm-thanks {
@@ -705,15 +706,19 @@ input {
   font-weight: 700;
   font-family: inherit;
 }
+.confirm-thanks {
+  color: #fff;
+}
 .checkout-confirm {
   display: flex;
   gap: 1rem;
 }
 .updates-heading h3 {
   font-size: 2rem;
+  color: #fff;
 }
 .updates-info p {
-  color: #837474;
+  color: #fff;
   font-size: 1.4rem;
 }
 .checkout-updates {
@@ -723,7 +728,7 @@ input {
 }
 .data-heading {
   font-size: 1.4rem;
-  color: #837474;
+  color: #fff;
 }
 .data-content ul {
   list-style: none;
@@ -733,7 +738,7 @@ input {
 }
 .data-content li {
   font-size: 1.4rem;
-  color: #6b6363;
+  color: #fff;
 }
 .checkout-contact-data,
 .checkout-adress-data {

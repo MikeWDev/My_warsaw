@@ -107,14 +107,14 @@
   .basket-con {
     position: fixed;
     width: 60%;
-    height: 70vh;
+    height: 80%;
     right: -70%;
     transition: all ease-in-out 600ms;
     border: 1px solid #ec2427;
     border-radius: 25px 0 0 25px;
   }
   .basket-con-slide {
-    right: 0;
+    right: 0 !important;
   }
   .menu {
     display: grid;
@@ -240,6 +240,20 @@
   .nav-sm {
     width: 70%;
   }
+  .checkout-header-con {
+    display: flex;
+    justify-content: center;
+  }
+  .delivery-button-con {
+    justify-content: center;
+  }
+  .basket-con {
+    width: 75%;
+    right: -75%;
+  }
+  .basket-slide-icon-slide {
+    right: 75%;
+  }
 }
 /*#################################
 ### SMALL LAPTOPS BELOW 300px####
@@ -251,5 +265,13 @@
   .hidden {
     transition: 1s;
     right: -90%;
+  }
+}
+/*#################################
+### SMALL LAPTOPS BELOW 350px####
+###################################*/
+@media (max-width: 21.87em) {
+  html {
+    font-size: 42.2%;
   }
 }
