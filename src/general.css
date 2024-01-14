@@ -530,7 +530,7 @@ figcaption {
 }
 
 .summary-item-name p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
 }
@@ -544,7 +544,7 @@ figcaption {
 .delete-icon {
   background-color: #000;
   border-radius: 50%;
-  padding: 0.2rem;
+  padding: 0.5rem;
   border: 1px solid #ec2427;
 }
 .delete-icon .delete-icon .item-quantity p {
@@ -557,7 +557,7 @@ figcaption {
   justify-content: space-between;
 }
 .item-price p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #fff;
   font-family: inherit;
   font-weight: 700;
@@ -584,14 +584,14 @@ figcaption {
   border-radius: 12px;
 }
 .count-qty p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   font-family: inherit;
   text-align: center;
   color: #fff;
 }
 .count-qty {
-  justify-self: center;
+  padding: 0 1rem;
 }
 .svg-qty-plus,
 .svg-qty-minus {

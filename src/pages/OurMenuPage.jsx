@@ -6,7 +6,15 @@ import MenuChoice from "../components/menuChoice";
 import DeliveryDetails from "../components/deliveryDetails";
 import DeliveryCheckout from "../components/deliveryCheckout";
 import { Basket } from "@phosphor-icons/react";
+import { useState } from "react";
+import { CaretRight } from "@phosphor-icons/react/dist/ssr";
 const OurMenuPage = () => {
+  const [isSmallBasketActive, setIsSmallBasketActive] = useState(false);
+
+  function handleToggle() {
+    setIsSmallBasketActive(!isSmallBasketActive);
+  }
+
   return (
     <>
       <section className="menu-section">
@@ -17,7 +25,13 @@ const OurMenuPage = () => {
             {/* <DeliveryCheckout />
             <DeliveryDetails /> */}
           </div>
-          <div className="basket-con">
+          <div
+            className={
+              isSmallBasketActive
+                ? "basket-con basket-con-slide "
+                : "basket-con"
+            }
+          >
             <div className="basket-header-con">
               <div className="basket-svg">
                 <Basket size={32} color="#fff" />
@@ -63,6 +77,20 @@ const OurMenuPage = () => {
                 <button>Pay</button>
               </div>
             </div>
+          </div>
+          <div
+            className={
+              isSmallBasketActive
+                ? "basket-slide-icon basket-slide-icon-slide"
+                : "basket-slide-icon"
+            }
+            onClick={handleToggle}
+          >
+            {isSmallBasketActive ? (
+              <CaretRight onClick={handleToggle} color="#fff" size={32} />
+            ) : (
+              <Basket onClick={handleToggle} color="#fff" size={32} />
+            )}
           </div>
         </div>
       </section>

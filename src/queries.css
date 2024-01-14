@@ -104,7 +104,35 @@
   .about-content-con {
     gap: 3.6rem;
   }
+  .basket-con {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    right: -40%;
+    transition: all ease-in-out 600ms;
+    border: 1px solid #ec2427;
+    border-radius: 25px 0 0 25px;
+  }
+  .basket-con-slide {
+    right: 0;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 10fr 0.5fr;
+  }
+  .basket-slide-icon {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    transition: all ease-in-out 600ms;
+  }
+  .basket-slide-icon-slide {
+    right: 40%;
+    transition: all ease-in-out 600ms;
+    display: block;
+  }
 }
+
 /*#################################
 ### Adress box bug-fix 700px####
 ###################################*/
