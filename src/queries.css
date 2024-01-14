@@ -106,9 +106,9 @@
   }
   .basket-con {
     position: fixed;
-    width: 40%;
-    height: 100vh;
-    right: -40%;
+    width: 60%;
+    height: 70vh;
+    right: -70%;
     transition: all ease-in-out 600ms;
     border: 1px solid #ec2427;
     border-radius: 25px 0 0 25px;
@@ -127,17 +127,49 @@
     transition: all ease-in-out 600ms;
   }
   .basket-slide-icon-slide {
-    right: 40%;
+    right: 60%;
     transition: all ease-in-out 600ms;
     display: block;
   }
-}
 
+  .card-details {
+    gap: 2rem;
+  }
+  .card {
+    max-width: 23rem;
+  }
+  .card-button-con h5 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .menu-selection-con--sm {
+    display: flex;
+  }
+  .menu-selection-con {
+    display: none;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .menu-selection-con--sm button {
+    font-size: 2rem;
+  }
+  .slick-list {
+    margin: 0 20px;
+  }
+}
 /*#################################
 ### Adress box bug-fix 700px####
 ###################################*/
 @media (max-width: 43.75em) {
   .adress-box {
+    display: none;
+  }
+  .menu-selection-con--sm {
+    display: flex;
+  }
+  .menu-selection-con {
     display: none;
   }
 }
@@ -167,6 +199,14 @@
   .hidden {
     transition: 1s;
     right: -80%;
+  }
+  .basket-con {
+    position: fixed;
+    width: 65%;
+    z-index: 999;
+  }
+  .basket-slide-icon-slide {
+    right: 65%;
   }
 }
 /*#################################

@@ -445,6 +445,9 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+.menu-selection-con--sm {
+  display: none;
+}
 .menu-header-con {
   display: flex;
   flex-direction: column;
@@ -507,6 +510,7 @@ footer {
   font-weight: 700;
   color: #fff;
 }
+
 .summary-subtotal,
 .summary-delivery {
   display: flex;

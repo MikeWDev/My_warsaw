@@ -24,7 +24,7 @@ export const menuChoices = [
     key: 5,
   },
   {
-    name: "Homemade sauces",
+    name: "Sauces",
     key: 6,
   },
 ];

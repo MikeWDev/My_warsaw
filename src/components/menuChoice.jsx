@@ -2,7 +2,7 @@ import { menuChoices } from "../data";
 import MenuHeader from "./menuHeader";
 import Linebreak from "./lineBreak";
 import NewMenuCard from "./newMenuCards";
-
+import MenuChoiceSm from "./menuChoiceSm";
 const MenuChoice = () => {
   return (
     <div className="menu-con">
@@ -13,6 +13,7 @@ const MenuChoice = () => {
             return <button key={data.key}>{data.name}</button>;
           })}
         </div>
+        <MenuChoiceSm />
       </div>
       <Linebreak />
       <div className="menu-card-con">

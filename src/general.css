@@ -493,6 +493,20 @@ figcaption {
   color: #fff;
   border: solid 2px #ec2427;
 }
+.menu-selection-con--sm button {
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: none;
+  background: none;
+  font-weight: 700;
+  padding: 1rem 1.2rem;
+  border-radius: 5.6rem;
+  text-align: center;
+  background-color: #222222;
+  color: #fff;
+  border: solid 2px #ec2427;
+}
 /*####################
 ###MENU LINEBREAK COMPONENT###
 ####################*/
