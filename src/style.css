@@ -56,7 +56,6 @@ Medium: 11px
 
 .home-section {
   padding-bottom: 7.4rem;
-  padding-top: 1.2rem;
 }
 .home-padding {
   padding-top: 10.2rem !important;
@@ -391,7 +390,7 @@ figure:nth-child(2) .figure-img::before {
   color: #b8afaf;
   font-size: 1.6rem;
 }
-.footer-nav > ul > li {
+.footer-nav > ul > a > li {
   color: #b8afaf;
   font-size: 1.6rem;
   list-style: none;

@@ -47,10 +47,8 @@ const NavBar = () => {
         homeEl.classList.remove("home-padding");
       } else if (intersectingState === false && isOpen === false) {
         setSticky("sticky");
-        homeEl.classList.add("home-padding");
-        setTimeout(() => {
-          setSticky("sticky sticky-slide");
-        }, 10);
+
+        setSticky("sticky sticky-slide");
       }
     }
   }, [intersectingState, isOpen]);

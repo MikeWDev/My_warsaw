@@ -1,4 +1,4 @@
-import MenuCard from "../components/menuCard.jsx";
+import OfferCard from "../components/offerCard.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -91,13 +91,9 @@ const OfferCarousel = () => {
     <>
       <div className="container">
         <Slider {...settings}>
-          <MenuCard></MenuCard>
-          <MenuCard></MenuCard>
-          <MenuCard></MenuCard>
-          <MenuCard></MenuCard>
-          <MenuCard></MenuCard>
-          <MenuCard></MenuCard>
-          <MenuCard></MenuCard>
+          <OfferCard></OfferCard>
+          <OfferCard></OfferCard>
+          <OfferCard></OfferCard>
         </Slider>
       </div>
     </>

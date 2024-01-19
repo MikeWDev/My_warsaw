@@ -1,6 +1,6 @@
 import { Basket, X } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-scroll";
 const NavMenuSm = (props) => {
   const [visible, setVisible] = useState("hidden");
 
@@ -18,16 +18,52 @@ const NavMenuSm = (props) => {
       <nav className={`nav-sm ${visible} `}>
         <div className="sm-link-con">
           <div className="sm-link">
-            <a>Home</a>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Home
+            </Link>
           </div>
           <div className="sm-link">
-            <a href="">Menu</a>
+            <Link
+              activeClass="active"
+              to="#"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Menu
+            </Link>
           </div>
           <div className="sm-link">
-            <a href="">About</a>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              About
+            </Link>
           </div>
           <div className="sm-link">
-            <a href="">Location</a>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Location
+            </Link>
           </div>
           <div className="basket-link">
             <div className="nav-basket">

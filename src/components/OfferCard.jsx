@@ -1,21 +1,21 @@
 import zapiekMush from "../assets/img/home-page-bg.png";
-const MenuCard = () => {
+const OfferCard = () => {
   return (
     <>
-      <div className="card">
-        <div className="card-img">
+      <div className="offer-card">
+        <div className="offer-card-img">
           <img src={zapiekMush} alt="The picture of baguette with mushrooms" />
         </div>
-        <div className="card-details">
-          <div className="card-heading">
+        <div className="offer-card-details">
+          <div className="offer-card-heading">
             <h5>Zapiekanka</h5>
           </div>
-          <div className="card-ing">
+          <div className="offer-card-ing">
             <p>
               mushrooms, cheese, wheat bagueette, lorem ipsum doret set amet
             </p>
           </div>
-          <div className="card-price">
+          <div className="offer-card-price">
             <h5>£13.40</h5>
           </div>
         </div>
@@ -24,4 +24,4 @@ const MenuCard = () => {
   );
 };
 
-export default MenuCard;
+export default OfferCard;

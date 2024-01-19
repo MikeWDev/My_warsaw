@@ -8,11 +8,11 @@ import OurMenuPage from "./pages/OurMenuPage";
 function App() {
   return (
     <>
-      {/* <HomePage name="home" />
+      <HomePage name="home" />
       <OfferPage name="offer" />
       <AboutUsPage name="about" />
       <ContactUs name="contact" />
-      <Footer /> */}
+      <Footer />
       <OurMenuPage />
     </>
   );

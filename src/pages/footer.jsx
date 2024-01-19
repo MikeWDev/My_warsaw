@@ -56,11 +56,56 @@ const Footer = () => {
               <FooterHeading text="Navigation" />
               <div className="footer-nav">
                 <ul>
-                  <li>Home</li>
-                  <li>Menu</li>
-                  <li>Specials</li>
-                  <li>About us</li>
-                  <li>Location</li>
+                  <Link
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-500}
+                    duration={1000}
+                  >
+                    <li>Home</li>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    to="#"
+                    spy={true}
+                    smooth={true}
+                    offset={-500}
+                    duration={1300}
+                  >
+                    <li>Menu</li>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    to="offer"
+                    spy={true}
+                    smooth={true}
+                    offset={130}
+                    duration={1000}
+                  >
+                    <li>Specials</li>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}
+                  >
+                    <li>About us</li>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}
+                  >
+                    <li>Location</li>
+                  </Link>
                 </ul>
               </div>
             </div>
