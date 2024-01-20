@@ -165,7 +165,7 @@ header {
 }
 .sticky-inter-ob {
   position: fixed;
-  top: 0%;
+  top: -15%;
   left: 0;
   right: 0;
   transition: all ease-in-out 600ms;

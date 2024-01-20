@@ -3,30 +3,35 @@ const UseIntersecting = () => {
   const [interSticky, setInterSticky] = useState("");
   const [interHomePadding, setInterHomePadding] = useState("");
 
-  const obs = new IntersectionObserver(
-    function (entires) {
-      const ent = entires[0];
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      function (entires) {
+        const ent = entires[0];
 
-      if (ent.isIntersecting === false) {
-        setInterSticky("sticky-inter-ob");
-        setInterHomePadding("home-padding");
-      } else {
-        setInterSticky(" ");
-        setInterHomePadding(" ");
+        if (ent.isIntersecting === false) {
+          setInterSticky("sticky-inter-ob");
+          setInterHomePadding("home-padding");
+          setTimeout(() => {
+            setInterSticky("sticky-inter-ob sticky-inter-slide");
+          }, 1000);
+        } else {
+          setInterSticky(" ");
+          setInterHomePadding(" ");
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "-90px",
       }
-    },
-    {
-      root: null,
-      threshold: 0,
-      rootMargin: "-90px",
-    }
-  );
+    );
 
-  const homeElement = document.querySelectorAll(".home-section");
+    const homeElement = document.querySelectorAll(".home-section");
 
-  homeElement.forEach((el) => {
-    obs.observe(el);
-  });
+    homeElement.forEach((el) => {
+      obs.observe(el);
+    });
+  }, [interSticky]);
 
   return { interSticky, interHomePadding };
 };
