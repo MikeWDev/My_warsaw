@@ -1,33 +1,34 @@
 import { useEffect, useState } from "react";
 const UseIntersecting = () => {
-  const [intersectingState, setIntersectingState] = useState(true);
+  const [interSticky, setInterSticky] = useState("");
+  const [interHomePadding, setInterHomePadding] = useState("");
 
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      function (entires) {
-        const ent = entires[0];
+  const obs = new IntersectionObserver(
+    function (entires) {
+      const ent = entires[0];
 
-        if (ent.isIntersecting === false) {
-          setIntersectingState(false);
-        } else {
-          setIntersectingState(true);
-        }
-      },
-      {
-        root: null,
-        threshold: 0,
-        rootMargin: "-90px",
+      if (ent.isIntersecting === false) {
+        setInterSticky("sticky-inter-ob");
+        setInterHomePadding("home-padding");
+      } else {
+        setInterSticky(" ");
+        setInterHomePadding(" ");
       }
-    );
+    },
+    {
+      root: null,
+      threshold: 0,
+      rootMargin: "-90px",
+    }
+  );
 
-    const homeElement = document.querySelectorAll(".home-section");
+  const homeElement = document.querySelectorAll(".home-section");
 
-    homeElement.forEach((el) => {
-      obs.observe(el);
-    });
-  }, []);
+  homeElement.forEach((el) => {
+    obs.observe(el);
+  });
 
-  return intersectingState;
+  return { interSticky, interHomePadding };
 };
 
 export default UseIntersecting;

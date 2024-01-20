@@ -163,14 +163,14 @@ header {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
-.sticky {
+.sticky-inter-ob {
   position: fixed;
-  top: -15%;
+  top: 0%;
   left: 0;
   right: 0;
   transition: all ease-in-out 600ms;
 }
-.sticky-slide {
+.sticky-inter-slide {
   top: 0% !important;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 600ms;
 }
