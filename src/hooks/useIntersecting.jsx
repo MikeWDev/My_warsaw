@@ -13,7 +13,7 @@ const UseIntersecting = () => {
           setInterHomePadding("home-padding");
           setTimeout(() => {
             setInterSticky("sticky-inter-ob sticky-inter-slide");
-          }, 1000);
+          }, 500);
         } else {
           setInterSticky(" ");
           setInterHomePadding(" ");

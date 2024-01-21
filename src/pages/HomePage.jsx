@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import UseIntersecting from "../hooks/useIntersecting";
 const HomePage = (props) => {
   const { interHomePadding } = UseIntersecting();
-  console.log(interHomePadding);
+
   return (
     <>
       <NavBar />

@@ -131,7 +131,8 @@ header {
   color: #ec2427;
   transition: all ease 500ms;
 }
-.nav-basket {
+.nav-basket,
+.nav-list {
   padding: 1rem;
   z-index: 999;
   flex-direction: column;
@@ -153,8 +154,16 @@ header {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+.nav-list:hover,
+.nav-list:active,
+.nav-list:focus {
+  box-shadow: 0 0 20px rgb(236, 36, 39);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-.basket-svg {
+.basket-svg,
+.list-svg {
   display: flex;
   align-items: center;
 }
@@ -173,6 +182,13 @@ header {
 .sticky-inter-slide {
   top: 0% !important;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 600ms;
+}
+.sticky-nav-sm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all ease-in-out 600ms;
 }
 /*####################
 ###NAV FULL SCREEn###
@@ -194,10 +210,14 @@ header {
   -webkit-animation-delay: 2s;
   animation: slide 0.5s forwards;
   animation-delay: 2s;
-  z-index: 999;
+  z-index: 9999;
   transition: 1s;
 }
-
+.nav-close-icon {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
 .hidden {
   transition: 1s;
   right: -70%;

@@ -13,7 +13,7 @@ function App() {
       <AboutUsPage name="about" />
       <ContactUs name="contact" />
       <Footer />
-      <OurMenuPage />
+      {/* <OurMenuPage /> */}
     </>
   );
 }

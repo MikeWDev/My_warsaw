@@ -1,24 +1,23 @@
 import { Basket, X } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+
 const NavMenuSm = (props) => {
-  const [visible, setVisible] = useState("hidden");
-
-  useEffect(() => {
-    if (props.openState === true) {
-      setVisible("");
-    } else if (props.openState === false) {
-      setVisible("hidden");
-    }
-  }),
-    [props.openState];
-
   return (
     <>
-      <nav className={`nav-sm ${visible} `}>
+      <nav className={`nav-sm ${props.openClass}`}>
+        <div className="nav-basket nav-close-icon">
+          <X
+            onClick={props.closeFunction}
+            size={32}
+            color="#fff"
+            weight="bold"
+          />
+        </div>
+
         <div className="sm-link-con">
           <div className="sm-link">
             <Link
+              onClick={props.closeFunction}
               activeClass="active"
               to="home"
               spy={true}
@@ -31,6 +30,7 @@ const NavMenuSm = (props) => {
           </div>
           <div className="sm-link">
             <Link
+              onClick={props.closeFunction}
               activeClass="active"
               to="#"
               spy={true}
@@ -43,6 +43,7 @@ const NavMenuSm = (props) => {
           </div>
           <div className="sm-link">
             <Link
+              onClick={props.closeFunction}
               activeClass="active"
               to="about"
               spy={true}
@@ -55,6 +56,7 @@ const NavMenuSm = (props) => {
           </div>
           <div className="sm-link">
             <Link
+              onClick={props.closeFunction}
               activeClass="active"
               to="contact"
               spy={true}
@@ -65,7 +67,7 @@ const NavMenuSm = (props) => {
               Location
             </Link>
           </div>
-          <div className="basket-link">
+          <div onClick={props.closeFunction} className="basket-link">
             <div className="nav-basket">
               <Basket size={32} color="#fff" />
             </div>
