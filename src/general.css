@@ -711,6 +711,7 @@ input {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-right: 2rem;
 }
 .second-input {
   display: flex;

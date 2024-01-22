@@ -15,15 +15,15 @@ const DeliveryDetails = () => {
           <form action="post" className="delivery-det-form">
             <div className="delivery-input-area">
               <label htmlFor="">Name: </label>
-              <input size="30" type="text" />
+              <input size="25" type="text" />
             </div>
             <div className="delivery-input-area">
               <label htmlFor="">E-mail: </label>
-              <input size="30" type="text" />
+              <input size="25" type="text" />
             </div>
             <div className="delivery-input-area">
               <label htmlFor="">Phone number: </label>
-              <input size="30" type="text" />
+              <input size="25" type="text" />
             </div>
           </form>
           <Linebreak />
@@ -33,18 +33,18 @@ const DeliveryDetails = () => {
           <form action="post" className="delivery-det-form">
             <div className="delivery-input-area">
               <label htmlFor="">First line of adrress: </label>
-              <input size="30" type="text" />
+              <input size="25" type="text" />
             </div>
             <div className="delivery-input-area second-input ">
-              <input className="" size="30" type="text" />
+              <input className="" size="25" type="text" />
             </div>
             <div className="delivery-input-area">
               <label htmlFor="">Postcode: </label>
-              <input size="30" type="text" />
+              <input size="25" type="text" />
             </div>
             <div className="delivery-input-area">
               <label htmlFor="">City: </label>
-              <input size="30" type="text" />
+              <input size="25" type="text" />
             </div>
           </form>
         </div>

@@ -21,9 +21,9 @@ const OurMenuPage = () => {
         <NavBar />
         <div className="menu container">
           <div className="content-con">
-            <MenuChoice />
-            {/* <DeliveryCheckout />
-            <DeliveryDetails /> */}
+            {/* <MenuChoice /> */}
+            {/* {/* <DeliveryCheckout /> */}
+            <DeliveryDetails />
           </div>
           <div
             className={

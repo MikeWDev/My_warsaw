@@ -112,6 +112,8 @@
     transition: all ease-in-out 600ms;
     border: 1px solid #ec2427;
     border-radius: 25px 0 0 25px;
+    z-index: 9999;
+    padding: 2rem;
   }
   .basket-con-slide {
     right: 0 !important;
@@ -119,6 +121,7 @@
   .menu {
     display: grid;
     grid-template-columns: 10fr 0.5fr;
+    font-size: 30%;
   }
   .basket-slide-icon {
     display: block;
@@ -208,6 +211,66 @@
   .basket-slide-icon-slide {
     right: 65%;
   }
+}
+/*#################################
+### CARD ADJUSTMENT 470px####
+###################################*/
+@media (max-width: 29.37em) {
+  .card-heading h5 {
+    font-size: 1.6rem;
+    display: flex;
+    color: #fff;
+  }
+  .card-ing p {
+    font-size: 1.2rem;
+    color: #676562;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.card-button-con h5 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.card-details {
+  gap: 0.7rem;
+}
+.card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px 25px 0 0;
+}
+.card {
+  max-width: 19rem;
+}
+/*#################################
+### CARD ADJUSTMENT 400px####
+###################################*/
+@media (max-width: 25.05em) {
+  .card-heading h5 {
+    font-size: 1.5rem;
+    display: flex;
+    color: #fff;
+  }
+  .card-ing p {
+    font-size: 1.1rem;
+    color: #676562;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.card-button-con h5 {
+  text-align: center;
+  font-size: 1rem;
+}
+.card-details {
+  gap: 0.7rem;
+}
+.card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px 25px 0 0;
+}
+.card {
+  max-width: 15rem;
 }
 /*#################################
 ### SMALL LAPTOPS BELOW 450px####
