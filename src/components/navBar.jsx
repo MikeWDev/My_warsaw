@@ -16,7 +16,6 @@ const NavBar = () => {
 
   function handleClose() {
     setOpenClass("hidden");
-    setNavSmSticky(" ");
   }
 
   return (
@@ -26,7 +25,16 @@ const NavBar = () => {
         <div className="nav-container">
           <header>
             <div className="nav-logo">
-              <img src={logo} alt="Logo of the restaurant" />
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-500}
+                duration={1300}
+              >
+                <img src={logo} alt="Logo of the restaurant" />/
+              </Link>
             </div>
             <nav className="nav-links">
               <Link

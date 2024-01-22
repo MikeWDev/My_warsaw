@@ -20,6 +20,14 @@ const MenuChoice = () => {
         <NewMenuCard />
         <NewMenuCard />
         <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
+        <NewMenuCard />
       </div>
     </div>
   );

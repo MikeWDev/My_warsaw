@@ -438,6 +438,7 @@ footer {
 .menu {
   display: grid;
   grid-template-columns: 7fr 3fr;
+  height: 100vh;
 }
 .menu-selection-con {
   display: flex;
@@ -450,21 +451,22 @@ footer {
 .menu-header-con {
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 3.6rem;
 }
 .menu-card-con {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   gap: 3.6rem;
   align-items: center;
   justify-content: center;
-  max-height: 100vh;
+  overflow: auto;
 }
 .menu-con {
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 2.4rem;
+  padding-top: 2.4rem;
+  height: 100%;
 }
 
 .basket-header-con {
@@ -487,12 +489,15 @@ footer {
   flex-direction: column;
   gap: 1.6rem;
   padding: 0 0.6rem;
+  overflow: auto;
+  max-height: 50%;
 }
 .basket-con {
   display: flex;
   flex-direction: column;
   gap: 3.8rem;
   background-color: #222222;
+  overflow: hidden;
 }
 .basket-slide-icon {
   display: none;

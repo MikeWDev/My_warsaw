@@ -44,6 +44,20 @@ const OurMenuPage = () => {
               <BasketSummaryCard />
               <BasketSummaryCard />
               <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
+              <BasketSummaryCard />
             </div>
             <div className="summary-price-con">
               <div className="summary-subtotal">
