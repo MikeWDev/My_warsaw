@@ -1,5 +1,5 @@
-import ArrowDown from "../components/main_page/arrowDown";
-import Figure from "../components/main_page/figure";
+import ArrowDown from "../../components/main_page/arrowDown";
+import Figure from "../../components/main_page/figure";
 import { Link } from "react-scroll";
 const AboutUsPage = (props) => {
   return (

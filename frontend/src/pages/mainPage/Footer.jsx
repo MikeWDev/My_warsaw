@@ -1,5 +1,5 @@
-import logo from "../assets/img/My_warsaw_logo.png";
-import FooterHeading from "../components/main_page/footerHeading";
+import logo from "../../assets/img/My_warsaw_logo.png";
+import FooterHeading from "../../components/main_page/footerHeading";
 import { Link } from "react-scroll";
 import { ArrowBendDownRight } from "@phosphor-icons/react";
 const Footer = () => {

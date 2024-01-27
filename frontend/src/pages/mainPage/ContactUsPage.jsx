@@ -3,7 +3,7 @@ import {
   TwitterLogo,
   InstagramLogo,
 } from "@phosphor-icons/react";
-import GoogleMap from "../components/main_page/googleMap";
+import GoogleMap from "../../components/main_page/googleMap";
 const ContactUs = (props) => {
   return (
     <>

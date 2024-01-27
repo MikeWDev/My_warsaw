@@ -1,5 +1,5 @@
-import ArrowDown from "../components/main_page/arrowDown";
-import OfferCarousel from "../components/main_page/offerCarousel";
+import ArrowDown from "../../components/main_page/arrowDown";
+import OfferCarousel from "../../components/main_page/offerCarousel";
 import { Link } from "react-scroll";
 
 const OfferPage = (props) => {

@@ -1,8 +1,8 @@
-import NavBar from "../components/main_page/navBar";
-import homePageBg from "../assets/img/home-page-bg.png";
-import ArrowDown from "../components/main_page/arrowDown";
+import NavBar from "../../components/main_page/navBar";
+import homePageBg from "../../assets/img/home-page-bg.png";
+import ArrowDown from "../../components/main_page/arrowDown";
 import { Link } from "react-scroll";
-import UseIntersecting from "../hooks/useIntersecting";
+import UseIntersecting from "../../hooks/useIntersecting";
 const HomePage = (props) => {
   const { interHomePadding } = UseIntersecting();
 
