@@ -545,7 +545,20 @@ figcaption {
   background-color: #222222;
   color: #fff;
   border: solid 2px #ec2427;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  cursor: pointer;
 }
+.menu-selection-con button:hover,
+.menu-selection-con button:active,
+.menu-selection-con button:focus {
+  box-shadow: 0 0 20px rgb(236, 36, 39);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .menu-selection-con--sm button {
   font-family: inherit;
   font-size: 1.6rem;

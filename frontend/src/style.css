@@ -450,6 +450,9 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+button {
+  cursor: pointer;
+}
 .menu-selection-con--sm {
   display: none;
 }
