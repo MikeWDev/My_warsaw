@@ -2,6 +2,7 @@ const { default: mongoose } = require("mongoose");
 //models
 const Zapiekanka = require("../models/ZapiekankaModel");
 const PolishDumplings = require("../models/PolishDumplingsModel");
+const Selection = require("../models/SelectionModel");
 
 //Getting all meals
 //get all zapiekankas
@@ -15,7 +16,13 @@ const getPolishDumplings = async (req, res) => {
   res.status(200).json(polishDumplings);
 };
 
+const getSelection = async (req, res) => {
+  const selection = await Selection.find({});
+  res.status(200).json(selection);
+};
+
 module.exports = {
   getZapiekankas,
   getPolishDumplings,
+  getSelection,
 };

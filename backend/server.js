@@ -2,10 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const mealRoutes = require("./routes/meals");
 require("dotenv").config();
-
+const cors = require("cors");
 //express app
 const app = express();
 app.use(express.json());
+app.use(cors());
 //connect to db
 mongoose
   .connect(process.env.MONGO_URI)
