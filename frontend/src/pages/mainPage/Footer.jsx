@@ -1,6 +1,7 @@
 import logo from "../../assets/img/My_warsaw_logo.png";
 import FooterHeading from "../../components/main_page/footerHeading";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { ArrowBendDownRight } from "@phosphor-icons/react";
 const Footer = () => {
   return (
@@ -34,20 +35,30 @@ const Footer = () => {
               <div className="footer-menu-links">
                 <ul>
                   <li>
-                    <ArrowBendDownRight />
-                    <p>Zapiekanki</p>
+                    <RouterLink to="our-menu">
+                      <ArrowBendDownRight />
+                      <p>Zapiekanki</p>
+                    </RouterLink>
                   </li>
                   <li>
-                    <ArrowBendDownRight /> <p>Pierogi</p>
+                    <RouterLink to="our-menu">
+                      <ArrowBendDownRight /> <p>Pierogi</p>
+                    </RouterLink>
                   </li>
                   <li>
-                    <ArrowBendDownRight /> <p>Drinks</p>
+                    <RouterLink to="our-menu">
+                      <ArrowBendDownRight /> <p>Drinks</p>
+                    </RouterLink>
                   </li>
                   <li>
-                    <ArrowBendDownRight /> <p>Zapiekanki</p>
+                    <RouterLink to="our-menu">
+                      <ArrowBendDownRight /> <p>Zapiekanki</p>
+                    </RouterLink>
                   </li>
                   <li>
-                    <ArrowBendDownRight /> <p>Pierogi</p>
+                    <RouterLink to="our-menu">
+                      <ArrowBendDownRight /> <p>Pierogi</p>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>

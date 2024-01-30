@@ -2,6 +2,7 @@ import NavBar from "../../components/main_page/navBar";
 import homePageBg from "../../assets/img/home-page-bg.png";
 import ArrowDown from "../../components/main_page/arrowDown";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import UseIntersecting from "../../hooks/useIntersecting";
 const HomePage = (props) => {
   const { interHomePadding } = UseIntersecting();
@@ -9,11 +10,7 @@ const HomePage = (props) => {
   return (
     <>
       <NavBar />
-      <section
-        className={`home-section ${interHomePadding}`}
-        name={props.name}
-        id="home"
-      >
+      <section className={`home-section ${interHomePadding}`} name={props.name}>
         <div className="home container grid">
           <div className="home-content-container">
             <div className="home-content grid ">
@@ -29,7 +26,9 @@ const HomePage = (props) => {
                   </div>
                 </div>
                 <div className="home-button btn">
-                  <button>order now</button>
+                  <RouterLink to="our-menu">
+                    <button>order now</button>
+                  </RouterLink>
                 </div>
               </div>
               <div className="home-img">

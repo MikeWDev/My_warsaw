@@ -1,6 +1,7 @@
 import ArrowDown from "../../components/main_page/arrowDown";
 import OfferCarousel from "../../components/main_page/offerCarousel";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const OfferPage = (props) => {
   return (
@@ -22,7 +23,9 @@ const OfferPage = (props) => {
             <OfferCarousel />
 
             <div className="btn offer-btn">
-              <button>see full menu</button>
+              <RouterLink to="our-menu">
+                <button>see full menu</button>
+              </RouterLink>
             </div>
             <Link
               activeClass="active"

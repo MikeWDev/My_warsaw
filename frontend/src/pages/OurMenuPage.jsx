@@ -1,12 +1,13 @@
 import Linebreak from "../components/our_menu_page/lineBreak";
 import BasketSummaryCard from "../components/our_menu_page/basketSummaryCard";
-import NavBar from "../components/main_page/navBar";
 import MenuChoice from "../components/our_menu_page/menuChoice";
 import DeliveryDetails from "../components/our_menu_page/deliveryDetails";
 import DeliveryCheckout from "../components/our_menu_page/deliveryCheckout";
 import { Basket } from "@phosphor-icons/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
+import { Route } from "react-router-dom";
+import NavBarOurMenu from "../components/our_menu_page/navBarOurMenu";
 const OurMenuPage = () => {
   const [isSmallBasketActive, setIsSmallBasketActive] = useState(false);
 
@@ -17,11 +18,11 @@ const OurMenuPage = () => {
   return (
     <>
       <section className="menu-section">
-        <NavBar />
+        <NavBarOurMenu />
         <div className="menu container">
           <div className="content-con">
-            {/* <MenuChoice /> */}
-            <DeliveryCheckout />
+            <MenuChoice />
+            {/* <DeliveryCheckout /> */}
             {/* <DeliveryDetails /> */}
           </div>
           <div
@@ -40,22 +41,6 @@ const OurMenuPage = () => {
               </div>
             </div>
             <div className="basket-content">
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
-              <BasketSummaryCard />
               <BasketSummaryCard />
             </div>
             <div className="summary-price-con">

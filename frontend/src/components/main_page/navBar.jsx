@@ -5,6 +5,7 @@ import UseIntersecting from "../../hooks/useIntersecting";
 import useScreenSize from "../../hooks/useScreenSize";
 import { Basket, List } from "@phosphor-icons/react";
 import { useState } from "react";
+import { Route, Link as RouterLink } from "react-router-dom";
 const NavBar = () => {
   const { interSticky } = UseIntersecting();
   const screenSize = useScreenSize();
@@ -47,16 +48,8 @@ const NavBar = () => {
               >
                 Home
               </Link>
-              <Link
-                activeClass="active"
-                to="#"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={1000}
-              >
-                Menu
-              </Link>
+              <RouterLink to="our-menu/zapiekankas">Menu</RouterLink>
+
               <Link
                 activeClass="active"
                 to="about"
@@ -87,9 +80,11 @@ const NavBar = () => {
               </div>
             ) : (
               <div className="basket-svg">
-                <div className="nav-basket">
-                  <Basket size={32} color="#fff" />;
-                </div>
+                <RouterLink to="our-menu">
+                  <div className="nav-basket">
+                    <Basket size={32} color="#fff" />;
+                  </div>
+                </RouterLink>
               </div>
             )}
           </header>

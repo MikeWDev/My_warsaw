@@ -1,23 +1,29 @@
 import { useState } from "react";
 import zapiekMush from "../../assets/img/home-page-bg.png";
-const NewMenuCard = () => {
+const NewMenuCard = ({ data }) => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
   function handleToggle() {
     setIsOverlayActive(!isOverlayActive);
   }
+
   return (
     <div className="card">
       <div className="card-img">
-        <img src={zapiekMush} alt="The picture of baguette with mushrooms" />
+        <img
+          src={`${data.imgSrc}`}
+          alt="The picture of baguette with mushrooms"
+        />
         <div
           className="alerg-overlap"
           style={isOverlayActive ? { opacity: "1" } : { opacity: "0" }}
-        ></div>
+        >
+          {data.allergens}
+        </div>
       </div>
       <div className="card-details">
         <div className="card-heading">
           <div className="card-item-name">
-            <h5>Zapiekanka</h5>
+            <h5>{data.title}</h5>
           </div>
           <div
             onClick={handleToggle}
@@ -31,11 +37,11 @@ const NewMenuCard = () => {
           </div>
         </div>
         <div className="card-ing">
-          <p>mushrooms, cheese, wheat bagueette, lorem ipsum doret set amet</p>
+          <p>{data.ingridients}</p>
         </div>
         <div className="card-button-con">
           <div className="button-price">
-            <h5>£13.40</h5>
+            <h5>£ {data.mealPrice}</h5>
           </div>
           <div className="button-card">
             <h5>ADD TO CART</h5>

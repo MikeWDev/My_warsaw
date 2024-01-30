@@ -1,5 +1,6 @@
 import { Basket, X } from "@phosphor-icons/react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const NavMenuSm = (props) => {
   return (
@@ -29,17 +30,9 @@ const NavMenuSm = (props) => {
             </Link>
           </div>
           <div className="sm-link">
-            <Link
-              onClick={props.closeFunction}
-              activeClass="active"
-              to="#"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-            >
+            <RouterLink onClick={props.closeFunction} to="our-menu">
               Menu
-            </Link>
+            </RouterLink>
           </div>
           <div className="sm-link">
             <Link
