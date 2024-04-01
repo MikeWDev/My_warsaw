@@ -14,7 +14,7 @@ const BasketSummaryCard = () => {
               <p>Zapiekanka</p>
             </div>
             <div className="delete-icon">
-              <X />
+              <X color="#fff" />
             </div>
           </div>
           <div className="summary-data">
