@@ -1,0 +1,46 @@
+@use "../../General/" as g;
+
+.user-con {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 3px solid g.$primary;
+  height: fit-content;
+  border-radius: 0.8rem;
+  transition: 300ms ease-in-out all;
+  &:hover {
+    @include g.hoverEffect;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .user-red {
+      display: flex;
+      span {
+        height: 3rem;
+        background-color: g.$primary;
+        width: 1rem;
+      }
+    }
+    .user-name {
+      span {
+        color: g.$fontColor;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .dropdown-button {
+    display: flex;
+    align-items: center;
+    .svg {
+      display: flex;
+      background-color: g.$primary;
+      border-radius: 50%;
+      svg {
+        font-size: 3.2rem;
+        color: g.$fontColor;
+      }
+    }
+  }
+}

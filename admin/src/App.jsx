@@ -1,5 +1,11 @@
+import MainPanel from "./Pages/MainPanel";
+import "./Scss/index.scss";
 function App() {
-  return <></>;
+  return (
+    <>
+      <MainPanel />
+    </>
+  );
 }
 
 export default App;

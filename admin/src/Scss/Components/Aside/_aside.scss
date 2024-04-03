@@ -1,0 +1,28 @@
+@use "../../General/" as g;
+aside {
+  background-color: g.$darkGray;
+  height: 100vh;
+  .actions-con {
+    display: flex;
+    flex-direction: column;
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+    .actions-heading {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      span {
+        width: 1rem;
+        height: 3rem;
+        background-color: g.$primary;
+      }
+      h2 {
+        // color: g.$fontColor;
+        font-size: 3.2rem;
+      }
+    }
+  }
+}

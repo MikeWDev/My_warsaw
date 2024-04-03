@@ -1,0 +1,5 @@
+@mixin hoverEffect() {
+  box-shadow: 0 0 20px rgb(236, 36, 39);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

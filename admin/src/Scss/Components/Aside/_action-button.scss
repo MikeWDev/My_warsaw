@@ -1,0 +1,9 @@
+@use "../../General/" as g;
+.action-button {
+  display: flex;
+  padding: 2rem 1rem;
+
+  h3 {
+    color: g.$fontColor;
+  }
+}
