@@ -1,9 +1,10 @@
 import React from "react";
-
+import { ArrowCircleRight } from "@phosphor-icons/react";
 const ActionButton = () => {
   return (
     <div className="action-button">
-      <h3>Action Name</h3>
+      <ArrowCircleRight />
+      <h3>Orders</h3>
     </div>
   );
 };

@@ -9,18 +9,21 @@ aside {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
+      padding: 2rem;
     }
     .actions-heading {
       display: flex;
       gap: 1rem;
       align-items: center;
+      margin-top: 2.4rem;
+      padding-left: 1.6rem;
       span {
         width: 1rem;
         height: 3rem;
         background-color: g.$primary;
       }
       h2 {
-        // color: g.$fontColor;
+        color: g.$fontColor;
         font-size: 3.2rem;
       }
     }

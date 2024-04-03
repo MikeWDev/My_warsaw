@@ -1,9 +1,33 @@
 @use "../../General/" as g;
 .action-button {
   display: flex;
-  padding: 2rem 1rem;
-
-  h3 {
+  border: 3px solid g.$lightGray;
+  border-radius: 0.8rem;
+  align-items: center;
+  padding: 0 1rem;
+  transition: ease-in-out all 300ms;
+  &:hover {
+    border: 3px solid g.$primary;
+  }
+  svg {
+    font-size: 2.4rem;
     color: g.$fontColor;
+  }
+  h3 {
+    padding: 1rem 1rem;
+    color: g.$fontColor;
+    font-size: 1.8rem;
+    display: flex;
+    width: 100%;
+  }
+  &:active {
+    h3 {
+      justify-content: flex-end;
+      transition: ease-in-out all 300ms;
+    }
+    svg {
+      rotate: 180deg;
+      transition: ease-in-out all 300ms;
+    }
   }
 }

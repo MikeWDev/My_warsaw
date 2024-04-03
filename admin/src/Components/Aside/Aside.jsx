@@ -11,10 +11,6 @@ const Aside = () => {
         </div>
         <nav>
           <ActionButton />
-          <ActionButton />
-          <ActionButton />
-          <ActionButton />
-          <ActionButton />
         </nav>
       </div>
     </aside>
