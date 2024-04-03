@@ -1,7 +1,10 @@
 //Pages
 @use "./Pages/main-panel.scss";
+@use "./Pages/order-panel";
+@use "./Pages/action-panel";
 //Componets
 @use "./Components/TopBar/top-bar";
 @use "./Components/TopBar/user-button.scss";
 @use "./Components/Aside/aside";
 @use "./Components/Aside/action-button";
+@use "./Components/Order/order";

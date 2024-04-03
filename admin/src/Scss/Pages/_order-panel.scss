@@ -1,0 +1,29 @@
+@use "../General/" as g;
+.orders-panel {
+  .orders-con {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    .heading {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      span {
+        background-color: g.$primary;
+        height: 4rem;
+        width: 1.2rem;
+      }
+      h2 {
+        font-size: 4.2rem;
+        font-weight: 700;
+        color: g.$secondary;
+      }
+    }
+    .orders-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+}
