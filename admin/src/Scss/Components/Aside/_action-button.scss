@@ -1,33 +1,41 @@
 @use "../../General/" as g;
 .action-button {
-  display: flex;
-  border: 3px solid g.$lightGray;
-  border-radius: 0.8rem;
-  align-items: center;
-  padding: 0 1rem;
-  transition: ease-in-out all 300ms;
-  &:hover {
-    border: 3px solid g.$primary;
-  }
-  svg {
-    font-size: 2.4rem;
-    color: g.$fontColor;
-  }
-  h3 {
-    padding: 1rem 1rem;
-    color: g.$fontColor;
-    font-size: 1.8rem;
+  a {
     display: flex;
-    width: 100%;
-  }
-  &:active {
-    h3 {
-      justify-content: flex-end;
+    border: 3px solid g.$lightGray;
+    border-radius: 0.8rem;
+    align-items: center;
+    padding: 0 1rem;
+    padding: 1rem 1rem;
+    position: relative;
+
+    &:hover {
+      border: 3px solid g.$primary;
       transition: ease-in-out all 300ms;
     }
     svg {
-      rotate: 180deg;
+      font-size: 2.4rem;
+      color: g.$fontColor;
       transition: ease-in-out all 300ms;
+    }
+    h3 {
+      color: g.$fontColor;
+      font-size: 1.8rem;
+      position: absolute;
+      width: 100%;
+      left: 15%;
+      transition: ease-in-out all 300ms;
+    }
+
+    &.active {
+      border: 3px solid g.$primary;
+
+      h3 {
+        left: 70%;
+      }
+      svg {
+        rotate: 180deg;
+      }
     }
   }
 }
