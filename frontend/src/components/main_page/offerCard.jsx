@@ -1,4 +1,4 @@
-import zapiekMush from "../../assets/img/home-page-bg.png";
+import zapiekMush from "../../assets/img/home-page-bg.jpg";
 import { Link as RouterLink } from "react-router-dom";
 const OfferCard = () => {
   return (

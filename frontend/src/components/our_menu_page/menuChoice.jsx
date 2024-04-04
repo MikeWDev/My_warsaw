@@ -3,7 +3,7 @@ import Linebreak from "./lineBreak";
 import NewMenuCard from "../our_menu_page/newMenuCards";
 import MenuChoiceSm from "./menuChoiceSm";
 import { useEffect, useState } from "react";
-import pic from "../../assets/img/home-page-bg.png";
+import pic from "../../assets/img/home-page-bg.jpg";
 import UseSelect from "../../hooks/useSelect";
 const MenuChoice = () => {
   //Fetching data

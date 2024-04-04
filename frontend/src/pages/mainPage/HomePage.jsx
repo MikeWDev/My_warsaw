@@ -1,5 +1,5 @@
 import NavBar from "../../components/main_page/navBar";
-import homePageBg from "../../assets/img/home-page-bg.png";
+import homePageBg from "../../assets/img/home-page-bg.jpg";
 import ArrowDown from "../../components/main_page/arrowDown";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
@@ -14,6 +14,13 @@ const HomePage = (props) => {
         <div className="home container grid">
           <div className="home-content-container">
             <div className="home-content grid ">
+              <div className="home-img">
+                <img
+                  src={homePageBg}
+                  alt="The picture of well presented food "
+                />
+                <span></span>
+              </div>
               <div className="home-slogan-content">
                 <div className="home-slogans">
                   <div className="small-slogan">
@@ -30,12 +37,6 @@ const HomePage = (props) => {
                     <button>order now</button>
                   </RouterLink>
                 </div>
-              </div>
-              <div className="home-img">
-                <img
-                  src={homePageBg}
-                  alt="The picture of well presented food "
-                />
               </div>
             </div>
             <Link

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import zapiekMush from "../../assets/img/home-page-bg.png";
+import zapiekMush from "../../assets/img/home-page-bg.jpg";
 const NewMenuCard = ({ data }) => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
   function handleToggle() {

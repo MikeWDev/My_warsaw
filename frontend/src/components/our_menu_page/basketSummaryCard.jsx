@@ -1,4 +1,4 @@
-import itemPic from "../../assets/img/home-page-bg.png";
+import itemPic from "../../assets/img/home-page-bg.jpg";
 import Linebreak from "../our_menu_page/lineBreak";
 import { Minus, Plus, X } from "@phosphor-icons/react";
 const BasketSummaryCard = () => {
