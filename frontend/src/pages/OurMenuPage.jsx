@@ -22,8 +22,8 @@ const OurMenuPage = () => {
         <div className="menu container">
           <div className="content-con">
             <MenuChoice />
-            {/* <DeliveryCheckout /> */}
-            {/* <DeliveryDetails /> */}
+            <DeliveryCheckout />
+            <DeliveryDetails />
           </div>
           <div
             className={

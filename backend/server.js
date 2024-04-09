@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const mealRoutes = require("./routes/meals");
+const orderRoutes = require("./routes/orders");
 require("dotenv").config();
 const cors = require("cors");
 //express app
@@ -22,9 +23,9 @@ mongoose
 
 //middleware
 app.use((req, res, next) => {
-  console.log(req.path, req.method + " kurwaaa");
   next();
 });
 
 //routes
 app.use("/our-menu", mealRoutes);
+app.use("/summary", orderRoutes);
