@@ -6,14 +6,14 @@ import DeliveryCheckout from "../components/our_menu_page/deliveryCheckout";
 import { Basket } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
-import { Route } from "react-router-dom";
+import { Route, useLoaderData } from "react-router-dom";
 import NavBarOurMenu from "../components/our_menu_page/navBarOurMenu";
 const OurMenuPage = () => {
   const [isSmallBasketActive, setIsSmallBasketActive] = useState(false);
-
   function handleToggle() {
     setIsSmallBasketActive(!isSmallBasketActive);
   }
+  const meals = useLoaderData();
 
   return (
     <>
@@ -21,11 +21,11 @@ const OurMenuPage = () => {
         <NavBarOurMenu />
         <div className="menu container">
           <div className="content-con">
-            <MenuChoice />
-            <DeliveryCheckout />
-            <DeliveryDetails />
+            <MenuChoice meals={meals} />
+            {/* <DeliveryCheckout />
+            <DeliveryDetails /> */}
           </div>
-          <div
+          {/* <div
             className={
               isSmallBasketActive
                 ? "basket-con basket-con-slide "
@@ -75,7 +75,7 @@ const OurMenuPage = () => {
                 <button>Pay</button>
               </div>
             </div>
-          </div>
+          </div> */}
           <div
             className={
               isSmallBasketActive

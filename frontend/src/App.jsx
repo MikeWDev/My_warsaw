@@ -1,15 +1,10 @@
 import MainPage from "./pages/MainPage";
 import OurMenuPage from "./pages/OurMenuPage";
-import {
-  createBrowserRouter,
-  Route,
-  RouterProvider,
-  Routes,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+//Firebase deployment
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-
+import { mealLoader } from "./loaders/Restaurantloaders";
 const firebaseConfig = {
   apiKey: `${import.meta.env.VITE_APP_FIREBASE_API}`,
   authDomain: "mywarsaw-4365c.firebaseapp.com",
@@ -19,9 +14,11 @@ const firebaseConfig = {
   appId: "1:553441328593:web:47822d1c085789ae83f4f0",
   measurementId: "G-PYSK527C31",
 };
-
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+//React router
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,8 +26,9 @@ const router = createBrowserRouter([
     children: [],
   },
   {
-    path: "/our-menu/zapiekankas",
+    path: "/our-menu",
     element: <OurMenuPage />,
+    loader: mealLoader,
     children: [],
   },
 ]);

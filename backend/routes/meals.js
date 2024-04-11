@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const { getZapiekankas } = require("../controllers/mealController");
+const { getMeals } = require("../controllers/mealController");
 
-router.get("/zapiekankas", getZapiekankas);
+router.get("/", getMeals);
 
 module.exports = router;

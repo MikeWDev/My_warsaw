@@ -463,8 +463,6 @@ footer {
   background-color: #161616;
 }
 .menu {
-  display: grid;
-  grid-template-columns: 7fr 3fr;
   height: 100vh;
 }
 .menu-selection-con {
@@ -488,7 +486,7 @@ button {
   flex-wrap: wrap;
   gap: 3.6rem;
   align-items: center;
-  justify-content: center;
+
   overflow: auto;
 }
 .menu-card-con::-webkit-scrollbar-thumb {

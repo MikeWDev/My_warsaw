@@ -1,5 +1,5 @@
 import { useState } from "react";
-import zapiekMush from "../../assets/img/home-page-bg.jpg";
+
 const NewMenuCard = ({ data }) => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
   function handleToggle() {
@@ -17,7 +17,9 @@ const NewMenuCard = ({ data }) => {
           className="alerg-overlap"
           style={isOverlayActive ? { opacity: "1" } : { opacity: "0" }}
         >
-          {data.allergens}
+          <h1>Allergens</h1>
+          {data.allergens &&
+            data.allergens.map((allergen, i) => <p>{allergen}</p>)}
         </div>
       </div>
       <div className="card-details">
@@ -37,7 +39,10 @@ const NewMenuCard = ({ data }) => {
           </div>
         </div>
         <div className="card-ing">
-          <p>{data.ingridients}</p>
+          {data.ingridients &&
+            data.ingridients.map((ingridient, i) => (
+              <p> {ingridient + ","} </p>
+            ))}
         </div>
         <div className="card-button-con">
           <div className="button-price">

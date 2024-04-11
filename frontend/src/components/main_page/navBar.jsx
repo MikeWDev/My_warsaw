@@ -48,7 +48,7 @@ const NavBar = () => {
               >
                 Home
               </Link>
-              <RouterLink to="our-menu/zapiekankas">Menu</RouterLink>
+              <RouterLink to="our-menu">Menu</RouterLink>
 
               <Link
                 activeClass="active"
